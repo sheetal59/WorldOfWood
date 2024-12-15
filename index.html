@@ -457,8 +457,10 @@
           <!--product pdf-->
           <div id="pdfModal" class="modal">
             <div class="modal-content">
-                <span class="close-btn" onclick="closeModal()">&times;</span>
-                <iframe id="pdfFrame" src="path_to_your_pdf.pdf" frameborder="0"></iframe>
+              <div class="close-btn" onclick="closeModal('pdfModal')" style="color: red; font-size: 1.5rem; cursor: pointer;">
+                &#x2715;
+              </div>
+              <iframe id="pdfFrame" src="" frameborder="0" style="width: 100%; height: 500px;"></iframe>
             </div>
         </div>
       </div>
@@ -573,44 +575,50 @@
       };
 
       // Open product type modal
-      function openModal(category) {
-          const modal = document.getElementById('productModal');
-          const title = document.getElementById('modal-title');
-          const list = document.getElementById('type-list');
+function openModal(category) {
+  const modal = document.getElementById('productModal');
+  const title = document.getElementById('modal-title');
+  const list = document.getElementById('type-list');
 
-          title.textContent = `Product Types - ${category.replace('-', ' ').toUpperCase()}`;
-          list.innerHTML = ''; // Clear previous items
+  title.textContent = `Product Types - ${category.replace('-', ' ').toUpperCase()}`;
+  list.innerHTML = ''; // Clear previous items
 
-          // Populate product types dynamically
-          products[category].forEach(type => {
-              const listItem = document.createElement('li');
-              listItem.textContent = type.name;
-              listItem.onclick = () => openPDF(type.pdf);
-              list.appendChild(listItem);
-          });
+  products[category].forEach(type => {
+    const listItem = document.createElement('li');
+    listItem.textContent = type.name;
+    listItem.onclick = () => openPDF(type.pdf);
+    list.appendChild(listItem);
+  });
 
-          modal.style.display = 'flex';
-      }
+  modal.style.display = 'flex';
+}
 
-      // Open PDF modal
-      function openPDF(pdfLink) {
-          const pdfModal = document.getElementById('pdfModal');
-          const pdfFrame = document.getElementById('pdfFrame');
+// Open PDF modal
+function openPDF(pdfLink) {
+  const pdfModal = document.getElementById('pdfModal');
+  const pdfFrame = document.getElementById('pdfFrame');
 
-          pdfFrame.src = pdfLink; // Set PDF link
-          pdfModal.style.display = 'flex';
-      }
+  pdfFrame.src = pdfLink; // Set PDF link
+  pdfModal.style.display = 'flex';
+}
 
-      function closeModal() {
-    modal.style.display = 'none';
-    document.body.style.overflow = 'auto'; // Restore background scrolling
+// Close modal
+function closeModal(modalId) {
+  const modal = document.getElementById(modalId);
+  modal.style.display = 'none';
+  document.body.style.overflow = 'auto'; // Restore background scrolling
 }
 
 // Close modal when clicking outside of it
 window.onclick = function (event) {
-    if (event.target === modal) {
-        closeModal();
-    }
+  const productModal = document.getElementById('productModal');
+  const pdfModal = document.getElementById('pdfModal');
+
+  if (event.target === productModal) {
+    closeModal('productModal');
+  } else if (event.target === pdfModal) {
+    closeModal('pdfModal');
+  }
 };
   </script>
   </body>
