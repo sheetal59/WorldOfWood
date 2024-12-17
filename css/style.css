@@ -18607,7 +18607,17 @@ iframe {
     overflow: hidden; /* Clip overflow content */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
 }
-
+/* Modal content with scroll */
+.modal-content {
+    background-color: #fff;
+    width: 80%;
+    max-height: 80vh; /* Restrict height */
+    overflow-y: auto; /* Enable vertical scroll */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+    position: relative;
+}
 /* Close Button */
 .close-btn {
     position: absolute;
@@ -18654,5 +18664,117 @@ iframe#pdfFrame {
 	  right: 10px;
 	  font-size: 1.2rem;
 	}
+  }
+  
+  /* General Form Styling */
+#contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f8f8f8;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+}
+
+#contact-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+select {
+    height: auto;
+}
+
+
+/* Grid layout for product types */
+.grid-layout {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);  /* 4 columns */
+    gap: 10px;  /* Space between items */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.grid-layout li {
+    background-color: #f4f4f4;  /* Optional: Add background color for list items */
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.grid-layout li:hover {
+    background-color: #ddd;  /* Optional: Change background on hover */
+}
+
+#type-list {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 16px;
+	list-style-type: none;
+	padding: 0;
+  }
+  
+  #type-list li {
+	text-align: center;
+  }
+  
+  .grid-item-image {
+	width: 100px;
+	height: 100px;
+	object-fit: cover;
+  }
+  #type-list {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr); /* 4 items per row */
+	gap: 16px;
+	list-style-type: none;
+	padding: 0;
+  }
+  
+  #type-list li {
+	text-align: center;
+	border: 1px solid #ddd;
+	padding: 10px;
+	border-radius: 8px;
+  }
+  
+  .grid-item-image {
+	width: 100px;
+	height: 100px;
+	object-fit: cover;
+	border-radius: 4px;
   }
   
