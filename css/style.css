@@ -18777,4 +18777,206 @@ select {
 	object-fit: cover;
 	border-radius: 4px;
   }
+
   
+		  .about-us-section {
+			  position: relative;
+			  width: 100%;
+			  max-width: 1200px;
+			  margin: 50px auto;
+			  display: flex;
+			  flex-wrap: wrap;
+			  overflow: hidden;
+			  border-radius: 8px;
+		  }
+		  .about-us-background {
+			  position: absolute;
+			  top: 0;
+			  left: 0;
+			  width: 100%;
+			  height: 100%;
+			  z-index: -1;
+			  filter: blur(20px);
+			  opacity: 0.5;
+		  }
+		  .about-us-text {
+			  flex: 1;
+			  padding: 40px;
+			  color: #4a3f35; /* Brown */
+			  z-index: 2;
+		  }
+		  .about-us-text h2 {
+			  font-size: 36px;
+			  margin-bottom: 20px;
+			  text-transform: uppercase;
+			  letter-spacing: 2px;
+			  color: #f39b00; /* Orange */
+		  }
+		  .about-us-text p {
+			  font-size: 18px;
+			  line-height: 1.8;
+			  color: #4a3f35;
+		  }
+		  .about-us-video {
+			  flex: 1;
+			  display: flex;
+			  justify-content: center;
+			  align-items: center;
+			  padding: 20px;
+			  z-index: 2;
+		  }
+		  .about-us-video video {
+			  width: 100%;
+			  height: 350px;
+			  max-width: 500px;
+			  border-radius: 8px;
+			  z-index: 3;
+		  }
+		  @media (max-width: 768px) {
+			  .about-us-section {
+				  flex-direction: column;
+			  }
+			  .about-us-text, .about-us-video {
+				  flex: none;
+				  width: 100%;
+			  }
+		  }
+		  .contact-us-section {
+            width: 100%;
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 30px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-us-section h2 {
+            font-size: 28px;
+            margin-bottom: 20px;
+            text-align: center;
+            color: #f39b00; /* Orange */
+        }
+
+        .contact-us-section form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .contact-us-section label {
+            font-size: 16px;
+            margin-bottom: 5px;
+            color: #4a3f35; /* Brown */
+        }
+
+        .contact-us-section input, .contact-us-section select, .contact-us-section button {
+            font-size: 16px;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            outline: none;
+        }
+
+        .contact-us-section input:focus, .contact-us-section select:focus {
+            border-color: #f39b00;
+        }
+
+        .contact-us-section button {
+            background-color: #f39b00;
+            color: #ffffff;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .contact-us-section button:hover {
+            background-color: #d88700;
+        }
+		
+		
+
+		.footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+			font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+		.footer h4{
+			color: #f39b00;
+			font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+			margin-bottom: 10px;
+		}
+
+        .footer .section {
+            flex: 1;
+            margin: 0 10px;
+        }
+
+        .footer .essential-links ul {
+            list-style: none;
+            padding: 0;
+		
+        }
+
+
+        .footer .essential-links ul li {
+            margin-bottom: 8px;
+        }
+
+        .footer .essential-links ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .footer .social-icons a {
+            margin-right: 10px;
+            color: #fff;
+            text-decoration: none;
+            font-size: 20px;
+        }
+
+        .footer .map iframe {
+            width: 100%;
+            height: 200px;
+            border: none;
+        }
+
+        .footer .contact {
+            margin-top: 15px;
+        }
+
+        .footer .contact span {
+            display: block;
+            margin-top: 5px;
+        }
+
+		
+		@media (max-width: 768px) {
+            .footer {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+
+            .footer .section {
+                margin: 10px 0;
+            }
+
+            .footer .social-icons {
+                margin-top: 15px;
+            }
+        }
+
+		.copyright {
+            text-align: center;
+            width: 100%;
+            font-size: 14px;
+			background-color: #333;
+			color:#f39b00;
+			font-weight: bolder;
+        }
+		
