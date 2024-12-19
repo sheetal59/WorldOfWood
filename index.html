@@ -41,20 +41,22 @@
             <img src="images/logo-default-380x100.png" alt="Logo"> <text class="logo-text">रामभरोसे एंड संस</text>
           </div>
           <div class="menu">
-            <a href="#">Home</a>
-            <a href="#">About Us</a>
-            <a href="#">Contact Us</a>
+            <a href="#home">Home</a>
+            <a href="#about-us">About Us</a>
+            <a href="#products">Catalogue</a>
+            <a href="#contact-us">Contact Us</a>
           </div>
-          <button class="get-in-touch">Get in Touch</button>
+          <button class="get-in-touch"><a href="#contact-us">Get in Touch</a></button>
           <div class="hamburger" id="hamburger">
             <div></div>
             <div></div>
             <div></div>
           </div>
           <div class="mobile-menu" id="mobileMenu">
-            <a href="#">Home</a>
-            <a href="#">About Us</a>
-            <a href="#">Contact Us</a>
+            <a href="#home">Home</a>
+            <a href="#about-us">About Us</a>
+            <a href="#products">Catalouge</a>
+            <a href="#contact-us">Contact Us</a>
           </div>
         </nav>
         
@@ -68,7 +70,7 @@
                 <div class="swiper-slide-caption">
                   <div class="container">
                     <h1 data-caption-animate="fadeInUpSmall">Creating Coziness</h1>
-                    <p class="big" style="max-width: 520px" data-caption-animate="fadeInRightSmall" data-caption-delay="300">Create the perfect atmosphere of comfort and style with WOW premium Acoustic Fluted Panels. Crafted with top-tier quality materials, these panels not only improve sound clarity by reducing noise but also bring a sophisticated, modern touch to any space. </p><a class="button button-primary" href="#" data-caption-animate="fadeInRightSmall" data-caption-delay="550">View all Collections</a>
+                    <p class="big" style="max-width: 520px" data-caption-animate="fadeInRightSmall" data-caption-delay="300">Create the perfect atmosphere of comfort and style with WOW premium Acoustic Fluted Panels. Crafted with top-tier quality materials, these panels not only improve sound clarity by reducing noise but also bring a sophisticated, modern touch to any space. </p><a class="button button-primary" href="#products" data-caption-animate="fadeInRightSmall" data-caption-delay="550">View all Collections</a>
                   </div>
                 </div>
               </div>
@@ -78,7 +80,7 @@
                 <div class="swiper-slide-caption">
                   <div class="container">
                     <h1 data-caption-animate="fadeInUpSmall">Transforming Your Space</h1>
-                    <p class="big" style="max-width: 520px" data-caption-animate="fadeInRightSmall" data-caption-delay="300">Our company has been the leading provider of quality metal sheets and wall design services to customers. We pay attention to every aspect of our work.</p><a class="button button-primary" href="#" data-caption-animate="fadeInRightSmall" data-caption-delay="550">View all Collections</a>
+                    <p class="big" style="max-width: 520px" data-caption-animate="fadeInRightSmall" data-caption-delay="300">Our company has been the leading provider of quality metal sheets and wall design services to customers. We pay attention to every aspect of our work.</p><a class="button button-primary" href="#products" data-caption-animate="fadeInRightSmall" data-caption-delay="550">View all Collections</a>
                   </div>
                 </div>
               </div>
@@ -88,7 +90,7 @@
                 <div class="swiper-slide-caption">
                   <div class="container">
                     <h1 data-caption-animate="fadeInUpSmall">Wide Product Variety</h1>
-                    <p class="big" style="max-width: 520px" data-caption-animate="fadeInRightSmall" data-caption-delay="300">At World of Wood, we offer a diverse range of premium materials to elevate your space. From sound-enhancing Acoustic Fluted Panels and sleek Metal Sheets to unique Mosaic Wood Designs, ASA Sheets, and stylish Charcoal Highlighters, we have everything you need for both beauty and functionality. Our collection also includes Fabric Sheets and durable Evergreen Panel. Transform your surroundings with World of Wood!</p><a class="button button-primary" href="#" data-caption-animate="fadeInRightSmall" data-caption-delay="550">View all Collections</a>
+                    <p class="big" style="max-width: 520px" data-caption-animate="fadeInRightSmall" data-caption-delay="300">At World of Wood, we offer a diverse range of premium materials to elevate your space. From sound-enhancing Acoustic Fluted Panels and sleek Metal Sheets to unique Mosaic Wood Designs, ASA Sheets, and stylish Charcoal Highlighters, we have everything you need for both beauty and functionality. Our collection also includes Fabric Sheets and durable Evergreen Panel. Transform your surroundings with World of Wood!</p><a class="button button-primary" href="#products" data-caption-animate="fadeInRightSmall" data-caption-delay="550">View all Collections</a>
                   </div>
                 </div>
               </div>
@@ -103,7 +105,7 @@
       </section>
       <!-- Production-->
       <section class="section section-md bg-default text-center">
-        <div class="container">
+        <div class="container" id="home">
           <h2>Our Collections</h2>
           <div class="row row-70 row-lg-110 row-offset-1">
             <div class="col-lg-6"><a class="collection" href="#">
@@ -130,28 +132,30 @@
         </div>
       </section>
       <!-- Experience since 1999-->
-      <section class="section section-md bg-gray-4">
-        <div class="container">
-          <div class="row row-50 justify-content-md-center justify-content-lg-between align-items-lg-center">
-            <div class="col-md-10 col-lg-6 col-xl-5 wow fadeInLeftSmall">
-              <div class="block-wrap-1">
-                <h2>About Our Company</h2>
-                <p></p><a class="button button-darker" href="about-us.html">read more</a>
-              </div>
-            </div>
-            <div class="col-md-10 col-lg-6 col-xl-7 d-flex wow fadeInRightSmall">
-              <div class="thumb-video thumb-video_bordered"><img class="thumb-video__image" src="images/video-preview-962x465.jpg" alt="" width="962" height="465"/>
-                <div class="thumb-video__caption"><a class="thumb-video__button" href="//vimeo.com/123196494" data-lightgallery="item"></a>
-                  <h4 class="thumb-video__title"></h4>
-                </div>
-              </div>
-            </div>
+     
+        <div class="about-us-section" id="about-us">
+           <!-- Blurred Background Video -->
+        <video class="about-us-background" autoplay loop muted>
+          <source src="your-video-file.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+      </video>
+          <div class="about-us-text">
+              <h2>About Us</h2>
+              <p>
+                  Welcome to our company! We are dedicated to providing exceptional services and innovative solutions tailored to your needs. Our team is passionate about creating value and making a difference in the lives of our customers and the community.
+              </p>
           </div>
-        </div>
-      </section>
+          <div class="about-us-video">
+              <video controls>
+                  <source src="images/wowvideo.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+              </video>
+          </div>
+      </div>
+      
       <!-- Our Products-->
       <section class="section section-md bg-default text-center">
-        <div class="container">
+        <div class="container" id="products">
           <div class="isotope-wrap isotope-modern-wrap">
             <!-- Section Header-->
             <div class="section__header">
@@ -484,44 +488,94 @@
         </div>
       </section>
       <!--CONTACT US SECTION-->
+      <div class="contact-us-section" id="contact-us">
+        <h2>Contact Us</h2>
+        <form id="myForm" method="POST">
+            <label for="full-name">Full Name</label>
+            <input type="text" id="full-name" name="full-name" placeholder="Enter your full name" required>
     
+            <label for="mobile-number">Mobile Number</label>
+            <input type="tel" id="mobile-number" name="mobile-number" placeholder="Enter your mobile number" required>
 
-      
-      <footer class="footer-classic bg-gray-8">
-        <div class="container">
-          <div class="footer-classic__main">
-            <ul class="list-nav-bordered">
-              <li><a href="index.html"></a>Home</li>
-              <li><a href="about-us.html">About</a></li>
-              <li><a href="#">Products</a></li>
-              <li><a href="#">Media</a></li>
-              <li><a href="contacts.html">Contacts</a>
-              </li>
-            </ul>
-          </div>
-          <div class="divider"></div>
-          <div class="footer-classic__aside">
-            <div class="row row-20">
-              <div class="col-md-6 text-md-left">
-                <!-- Rights-->
-                <p class="rights"><span>WordOfWood By Ram Bharose and Sons</span><span>&nbsp;&copy;&nbsp;</span><span class="copyright-year"></span>. All Rights Reserved. </p>
-              </div>
-              <div class="col-md-6 text-md-right">
-                <ul class="list-inline-xxs">
-                  <li>
-                    <p>Follow Us</p>
-                  </li>
-                  <li><a class="icon icon-xs icon-style-modern fa fa-facebook" href="#"></a></li>
-                  <li><a class="icon icon-xs icon-style-modern fa fa-twitter" href="#"></a></li>
-                  <li><a class="icon icon-xs icon-style-modern fa fa-instagram" href="#"></a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </footer>
+            <label for="location">Location</label>
+            <input type="location" id="location" name="location" placeholder="Enter your Location" required>
+    
+            <label for="interest">Item of Interest</label>
+            <select id="interest" name="interest" required>
+                <option value="">Select an item</option>
+                <option value="Laminates">Laminates</option>
+                <option value="Fabric sheets">Fabric Sheets</option>
+                <option value="Wall Mouldings">Wall Mouldings</option>
+                <option value="Wallpapers">Wallpapers</option>
+                <option value="Acoustic Panels">Acoustic Panels</option>
+                <option value="Stone Veneers">Stone Veneers</option>
+                <option value="Wooden Flooring">Wooden Flooring</option>
+                <option value="Plywood">Plywood</option>
+                <option value="Mosaics">Mosaics</option>
+                <option value="Louvres">Louvres</option>
+                <option value="Evergreen Panels">Evergreen Panels</option>
+                <option value="Charcoal Highlighters">Charcoal Highlighters</option>
+                <option value="Acrylic Sheets">Acrylic Sheets</option>
+                <option value="ASA Sheets">ASA Sheets</option>
+                <option value="Backlit and Alabasters">backlit and Alabasters</option>
+                <option value="Blinds">Blinds</option>
+                <option value="Cane Webbings">Cane Webbings</option>
+                <option value="Ceiling">Ceiling</option>
+                <option value="Corian Surface">Corian Surface</option>
+                <option value="Exterior Products">Exterior Products</option>
+                <option value="Laminated Particleboards">Laminated Particleboards</option>
+                <option value="HPL">HPL</option>
+                <option value="Metal Sheets and Profiles">Metal Sheets And Profiles</option>
+                <option value="PU Sheets">PU Sheets</option>
+                <option value="Veneers">Veneers</option>
+                <option value="Wall Highlights">Wall Highlighters</option>
+                <option value="Door Skins">Door Skins</option>
+                <option value="Others">Others</option>
+            </select>
+    
+            <button type="button" onclick="SubForm()">Submit</button>
+        </form>
     </div>
-    <!-- Global Mailform Output-->
+    
+<!--footer-->
+      
+<div class="footer">
+  <!-- Essential Links Section -->
+  <div class="section essential-links">
+      <h4>Essential Links</h4>
+      <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Products</a></li>
+          <li><a href="#">Contact Us</a></li>
+      </ul>
+      <div class="contact">
+          <span><strong>Phone:</strong> +1 234 567 890</span>
+          <span><strong>Address:</strong>Patankar Choura, Patankar Bazar, Phalka Bazar, Khurjewala Mohalla, Daulat Ganj, Gwalior, Madhya Pradesh-474009</span>
+      </div>
+  </div>
+
+  <!-- Social Icons Section -->
+  <div class="section social-icons">
+      <h4>Follow Us On</h4>
+      <a href="https://www.instagram.com/worldofwoodgwalior/" title="Instagram"><img src="images/instagram.png" height="30px" width="30px"></a>
+      <a href="#" title="Twitter"><img src="images/twitter.png" height="30px" width="30px"></a>
+      <a href="worldofwoodbyrb@gmail.com" title="Gmail"><img src="images/gmail.png" height="30px" width="30px"></a>
+  </div>
+
+  <!-- Google Maps Section -->
+  <div class="section map">
+      <h4>Our Location</h4>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3579.80951730918!2d78.1568593!3d26.202873999999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3976c5d0b8d7ac27%3A0xd5c09dbc3285e357!2sWORLD%20OF%20WOODS!5e0!3m2!1sen!2sin!4v1734610276118!5m2!1sen!2sin" 
+      width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+</div>
+<div class="copyright">
+  &copy; World Of Wood By Rambharose and Sons. All Rights Reserved.
+</div>
+
+
+
     <div class="snackbars" id="form-output-global"></div>
     <!-- Javascript-->
     <script src="js/core.min.js"></script>
@@ -536,6 +590,20 @@
       hamburger.addEventListener('click', () => {
         mobileMenu.classList.toggle('show');
       });
+      // Close the menu when a link is clicked
+    const links = mobileMenu.querySelectorAll('a');
+    links.forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.remove('show');
+      });
+    });
+
+    // Close the menu when clicking outside
+    window.addEventListener('click', (e) => {
+      if (!hamburger.contains(e.target) && !mobileMenu.contains(e.target)) {
+        mobileMenu.classList.remove('show');
+      }
+    });
   
       // Hide navbar on scroll down, show on scroll up
       window.addEventListener('scroll', () => {
@@ -768,7 +836,30 @@ window.onclick = function (event) {
     closeModal('pdfModal');
   }
 };
+
+  
+
   </script>
+  <script>
+    src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
+<script>
+  function SubForm (){
+    $.ajax({
+      url:"https://api.apispreadsheets.com/data/AaltlG6GMrxFRGYp/",
+      type:"post",
+      data:$("#myForm").serializeArray(),
+      success: function(){
+        alert("Form Data Submitted :)")
+      },
+      error: function(){
+        alert("There was an error :(")
+      }
+    });
+  }
+  </script>
+  
   
   </body>
 </html>
