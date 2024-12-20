@@ -8,6 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="utf-8">
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    
     <!-- Stylesheets-->
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Lato:300,400,700%7CRoboto:400,500,700">
     <link rel="stylesheet" href="css/bootstrap.css">
@@ -46,7 +47,7 @@
             <a href="#products">Catalogue</a>
             <a href="#contact-us">Contact Us</a>
           </div>
-          <button class="get-in-touch"><a href="#contact-us">Get in Touch</a></button>
+          <button id="getInTouchBtn" class="get-in-touch">Get in Touch</button>
           <div class="hamburger" id="hamburger">
             <div></div>
             <div></div>
@@ -59,6 +60,15 @@
             <a href="#contact-us">Contact Us</a>
           </div>
         </nav>
+        <div id="contactCard" class="popup">
+  <div class="popup-content">
+    <span id="closeBtn" class="close">&times;</span>
+    <h2>Contact Details</h2>
+    <p><strong>Name:</strong> John Doe</p>
+    <p><strong>Email:</strong> johndoe@example.com</p>
+    <p><strong>Phone:</strong> +1234567890</p>
+  </div>
+</div>
         
       </header>
       <!-- Swiper-->
@@ -439,6 +449,7 @@
             </div>
           </div>
         </div>
+        
         <!--Product type modal-->
         <div class="modal" id="productModal">
           <div class="modal-content">
@@ -536,6 +547,32 @@
             <button type="button" onclick="SubForm()">Submit</button>
         </form>
     </div>
+    <!-- The Pop-up Modal -->
+<div id="contactModal" class="modal">
+  <div class="modal-content">
+      <span class="close-btn" id="closeModalBtn">&times;</span>
+      <h2>Contact Us</h2>
+      <!-- The contact form inside the modal -->
+      <form id="myFormModal" method="POST">
+          <label for="full-name">Full Name</label>
+          <input type="text" id="full-name-modal" name="full-name" placeholder="Enter your full name" required>
+
+          <label for="mobile-number">Mobile Number</label>
+          <input type="tel" id="mobile-number-modal" name="mobile-number" placeholder="Enter your mobile number" required>
+
+          <label for="location">Location</label>
+          <input type="location" id="location-modal" name="location" placeholder="Enter your Location" required>
+
+          <label for="interest">Item of Interest</label>
+          <select id="interest-modal" name="interest" required>
+              <option value="">Select an item</option>
+              <!-- Add your options here -->
+          </select>
+
+          <button type="button" onclick="SubForm()">Submit</button>
+      </form>
+  </div>
+</div>
     
 <!--footer-->
       
@@ -616,11 +653,13 @@
         lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
       });
     </script>
+    
+
     <script>
       // Product types and their PDF links
       const products = {
           'laminates': [
-              { name: 'Glossy Laminates', pdf: 'https://drive.google.com/file/d/1gV8zhWsSj5MdTN-fVGHC1aa7fPv9A78j/preview', thumbnail: 'https://via.placeholder.com/150'},
+              { name: 'Glossy Laminates', pdf: 'https://drive.google.com/file/d/1gV8zhWsSj5MdTN-fVGHC1aa7fPv9A78j/preview'},
               { name: 'Matte Laminates', pdf: 'https://drive.google.com/file/d/FILE_ID_2/preview' },
               { name: 'BRAVIA LAM  Laminates Catalogue', pdf: 'https://drive.google.com/file/d/114hnzGu1YKYyLnWeRmKVoB3sxr1aRHTG/preview'},
               { name: 'CORRA- The solid surfacing Catalogue', pdf: 'https://drive.google.com/file/d/1XKPUqxVx9D7wyv6xhXqVFfe8jCuGJ9m1/preview'},
@@ -835,6 +874,7 @@ const ul = document.getElementById('type-list');
 products.laminates.forEach(item => {
   const li = document.createElement('li');
   
+  
   // Create the image element for the thumbnail
   const img = document.createElement('img');
   img.src = item.thumbnail;  // Static placeholder or use any image URL
@@ -926,6 +966,67 @@ window.onclick = function (event) {
       }
     });
   }
+  </script>
+  <script>
+    // When the page loads, show the modal
+window.onload = function () {
+    const modal = document.getElementById("contactModal");
+    const closeModalBtn = document.getElementById("closeModalBtn");
+
+    // Show the modal (Contact Form) when the page loads
+    modal.style.display = "block";
+
+    // Close the modal when clicking the "x"
+    closeModalBtn.onclick = function () {
+        modal.style.display = "none";
+    };
+
+    // Close the modal if the user clicks outside the modal content
+    window.onclick = function (event) {
+        if (event.target === modal) {
+            modal.style.display = "none";
+        }
+    };
+};
+
+// Handle form submission
+function SubForm() {
+    const fullName = document.getElementById('full-name-modal').value;
+    const mobileNumber = document.getElementById('mobile-number-modal').value;
+    const location = document.getElementById('location-modal').value;
+    const interest = document.getElementById('interest-modal').value;
+
+    alert(`Form submitted successfully!\nFull Name: ${fullName}\nMobile Number: ${mobileNumber}\nLocation: ${location}\nItem of Interest: ${interest}`);
+
+    // Optionally hide the modal after form submission
+    document.getElementById("contactModal").style.display = "none";
+}
+
+  </script>
+
+  <script>
+    // Get elements
+const getInTouchBtn = document.getElementById('getInTouchBtn');
+const contactCard = document.getElementById('contactCard');
+const closeBtn = document.getElementById('closeBtn');
+
+// Open the popup when the button is clicked
+getInTouchBtn.onclick = function() {
+  contactCard.style.display = 'block';
+}
+
+// Close the popup when the close button is clicked
+closeBtn.onclick = function() {
+  contactCard.style.display = 'none';
+}
+
+// Close the popup if the user clicks outside of the contact card
+window.onclick = function(event) {
+  if (event.target === contactCard) {
+    contactCard.style.display = 'none';
+  }
+}
+
   </script>
   
   
