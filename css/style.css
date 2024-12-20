@@ -18726,6 +18726,7 @@ select {
     margin: 0;
 }
 
+
 .grid-layout li {
     background-color: #f4f4f4;  /* Optional: Add background color for list items */
     padding: 10px;
@@ -18734,6 +18735,17 @@ select {
     cursor: pointer;
     transition: background-color 0.3s;
 }
+.grid-item-image {
+	width: 100%;
+	height: auto;
+	max-height: 100px;
+	margin-bottom: 10px;
+  }
+  
+  iframe {
+	width: 100%;
+	height: 200px;
+  }
 
 .grid-layout li:hover {
     background-color: #ddd;  /* Optional: Change background on hover */
@@ -18979,4 +18991,142 @@ select {
 			color:#f39b00;
 			font-weight: bolder;
         }
-		
+	
+		/* Modal styles */
+.modal {
+	display: none; /* Hidden by default */
+	position: fixed; 
+	z-index: 1; 
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.4); /* Transparent background */
+	padding-top: 100px;
+  }
+  
+  /* Modal Content */
+  .modal-content {
+	background-color: #fff;
+	margin: 5% auto;
+	padding: 20px;
+	border: 1px solid #888;
+	width: 80%;
+	max-width: 400px;
+  }
+  
+  .close-btn {
+	color: #aaa;
+	float: right;
+	font-size: 28px;
+	font-weight: bold;
+  }
+  
+  .close-btn:hover,
+  .close-btn:focus {
+	color: black;
+	text-decoration: none;
+	cursor: pointer;
+  }
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4); /* Black background with transparency */
+    padding-top: 100px;
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 5% auto;
+    padding: 20px;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 1100px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Close Button */
+.close-btn {
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Style Form Inputs */
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+  
+
+/* Popup container */
+.popup {
+	display: none; /* Hidden by default */
+	position: fixed;
+	z-index: 1; /* Sit on top */
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto; /* Enable scroll if needed */
+	background-color: rgba(0, 0, 0, 0.5); /* Black with opacity */
+  }
+  
+  /* Popup content */
+  .popup-content {
+	background-color: white;
+	margin: 15% auto;
+	padding: 20px;
+	border: 1px solid #888;
+	border-radius: 5%;
+	width: 50%; /* Change size as needed */
+  }
+  
+  /* Close button */
+  .close {
+	color: #aaa;
+	float: right;
+	font-size: 28px;
+	font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+	color: black;
+	text-decoration: none;
+	cursor: pointer;
+  }
+  
