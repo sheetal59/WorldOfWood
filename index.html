@@ -659,7 +659,7 @@
       // Product types and their PDF links
       const products = {
           'laminates': [
-              { name: 'Glossy Laminates', pdf: 'https://drive.google.com/file/d/1gV8zhWsSj5MdTN-fVGHC1aa7fPv9A78j/preview'},
+              { name: 'Glossy Laminates', pdf: 'https://drive.google.com/file/d/1gV8zhWsSj5MdTN-fVGHC1aa7fPv9A78j/preview', thumbnail:'gmail.png'},
               { name: 'Matte Laminates', pdf: 'https://drive.google.com/file/d/FILE_ID_2/preview' },
               { name: 'BRAVIA LAM  Laminates Catalogue', pdf: 'https://drive.google.com/file/d/114hnzGu1YKYyLnWeRmKVoB3sxr1aRHTG/preview'},
               { name: 'CORRA- The solid surfacing Catalogue', pdf: 'https://drive.google.com/file/d/1XKPUqxVx9D7wyv6xhXqVFfe8jCuGJ9m1/preview'},
@@ -925,6 +925,156 @@ function openPDF(pdfLink) {
   pdfFrame.src = pdfLink; // Set PDF link
   pdfModal.style.display = 'flex';
 }
+
+// Function to extract Google Drive file ID from the PDF URL
+function extractFileId(pdfUrl) {
+  // Regular expression to match Google Drive file ID
+  const match = pdfUrl.match(/\/file\/d\/([^\/]+)/);
+  return match ? match[1] : null;
+}
+
+// Function to generate thumbnail URL from Google Drive file ID
+function generateThumbnailUrl(fileId) {
+  if (!fileId) return '/api/placeholder/200/150'; // Fallback to placeholder
+  return `https://drive.google.com/thumbnail?id=${fileId}`;
+}
+
+// Modified openModal function with thumbnail support
+function openModal(category) {
+  const modal = document.getElementById('productModal');
+  const title = document.getElementById('modal-title');
+  const list = document.getElementById('type-list');
+
+  title.textContent = `${category.replace('-', ' ').toUpperCase()}`;
+  list.innerHTML = ''; // Clear previous items
+
+  // Create grid container
+  products[category].forEach(type => {
+    const gridItem = document.createElement('div');
+    gridItem.className = 'grid-item';
+
+    // Create thumbnail container
+    const thumbnailContainer = document.createElement('div');
+    thumbnailContainer.className = 'thumbnail-container';
+
+    // Extract file ID and generate thumbnail URL
+    const fileId = extractFileId(type.pdf);
+    const thumbnailUrl = generateThumbnailUrl(fileId);
+
+    // Create and setup thumbnail image
+    const thumbnail = document.createElement('img');
+    thumbnail.className = 'thumbnail-image';
+    
+    // Add loading state and error handling
+    thumbnail.src = thumbnailUrl;
+    thumbnail.alt = type.name;
+    thumbnail.loading = 'lazy'; // Enable lazy loading
+
+    // Add error handling to fall back to placeholder
+    thumbnail.onerror = function() {
+      this.src = '/api/placeholder/200/150';
+      this.onerror = null; // Prevent infinite loop
+    };
+
+    // Create product name element
+    const productName = document.createElement('div');
+    productName.className = 'product-name';
+    productName.textContent = type.name;
+
+    // Create view PDF button
+    const viewButton = document.createElement('button');
+    viewButton.className = 'view-pdf-btn';
+    viewButton.textContent = 'View PDF';
+    viewButton.onclick = (e) => {
+      e.stopPropagation(); // Prevent grid item click
+      openPDF(type.pdf);
+    };
+
+    // Assemble the grid item
+    thumbnailContainer.appendChild(thumbnail);
+    gridItem.appendChild(thumbnailContainer);
+    gridItem.appendChild(productName);
+    gridItem.appendChild(viewButton);
+
+    // Add to the grid
+    list.appendChild(gridItem);
+  });
+
+  modal.style.display = 'flex';
+}
+
+// Updated CSS for better thumbnail handling
+const style = document.createElement('style');
+style.textContent = `
+  .grid-layout {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .grid-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background: white;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+
+  .grid-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  }
+
+  .thumbnail-container {
+    width: 100%;
+    height: 150px;
+    overflow: hidden;
+    border-radius: 4px;
+    background: #f5f5f5;
+    position: relative;
+  }
+
+  .thumbnail-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 0.3s;
+  }
+
+  .thumbnail-image[src="/api/placeholder/200/150"] {
+    opacity: 0.7;
+  }
+
+  .product-name {
+    margin: 10px 0;
+    text-align: center;
+    font-weight: 500;
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .view-pdf-btn {
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    margin-top: auto;
+  }
+
+  .view-pdf-btn:hover {
+    background-color: #0056b3;
+  }
+`;
+document.head.appendChild(style);
 
 // Close modal
 function closeModal(modalId) {
