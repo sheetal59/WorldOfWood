@@ -63,10 +63,12 @@
         <div id="contactCard" class="popup">
   <div class="popup-content">
     <span id="closeBtn" class="close">&times;</span>
-    <h2>Contact Details</h2>
-    <p><strong>Name:</strong> John Doe</p>
-    <p><strong>Email:</strong> johndoe@example.com</p>
-    <p><strong>Phone:</strong> +1234567890</p>
+    <h2>Get In Touch</h2>
+    <p><strong>Name:</strong> Pranav Singhal</p>
+    <p><strong>Email:</strong> worldofwoodbyrb@gmail.com</p>
+    <p><strong>Phone:</strong> 8001600160</p>
+    <p><strong>Name:</strong> Madhav Agrawal</p>
+    <p><strong>Phone:</strong> 8989028057</p>
   </div>
 </div>
         
@@ -239,6 +241,23 @@
                     </div>
                     <div class="product__main">
                       <p class="product__title"><a href="#">Wallpapers</a></p>
+                      <p class="product__price"></p>
+                    </div>
+                  </article>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 isotope-item" data-filter="Category 1">
+                  <!--product-->
+                  <article class="product">
+                    <div class="product__image-container" onclick="openModal('acoustic-panels')">
+                      <img class="product__image" src="images/product-04-210x200.jpg" alt="" width="210" height="200"/>
+                      <div class="product__overlay">
+                        <div class="view-button">
+                          <span class="view-text">View</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="product__main">
+                      <p class="product__title"><a href="#">Acoustic Panels</a></p>
                       <p class="product__price"></p>
                     </div>
                   </article>
@@ -804,7 +823,7 @@
           <li><a href="#">Contact Us</a></li>
       </ul>
       <div class="contact">
-          <span><strong>Phone:</strong> +1 234 567 890</span>
+          <span><strong>Phone:</strong>+91 8959800160</span>
           <span><strong>Address:</strong>Patankar Choura, Patankar Bazar, Phalka Bazar, Khurjewala Mohalla, Daulat Ganj, Gwalior, Madhya Pradesh-474009</span>
       </div>
   </div>
@@ -813,7 +832,7 @@
   <div class="section social-icons">
       <h4>Follow Us On</h4>
       <a href="https://www.instagram.com/worldofwoodgwalior/" title="Instagram"><img src="images/instagram.png" height="30px" width="30px"></a>
-      <a href="#" title="Twitter"><img src="images/twitter.png" height="30px" width="30px"></a>
+      <a href="https://wa.me/8959800160" title="Twitter"><img src="images/whatsapp.png" height="30px" width="30px"></a>
       <a href="worldofwoodbyrb@gmail.com" title="Gmail"><img src="images/gmail.png" height="30px" width="30px"></a>
   </div>
 
@@ -973,12 +992,17 @@
 
 
           ],
+          'acoustic-panels':[
+            {name:'Unidus Acoustics Catalogue', pdf:'https://drive.google.com/file/d/1b0IrhGVgF3wQmAdLWJFvjScKUqcwB9No/preview'},
+            {name:'Shade Card', pdf:'https://drive.google.com/file/d/1ypMMPjiGz8Rb9QgfTV6vPj45oLLdFmZE/preview'}
+
+          ],
           'stone-veneers': [
             {name:'Leemo Stone Veneers',pdf:'https://drive.google.com/file/d/1I6oB22c5tSfcQhySGfVP0zJ9aTJG2gYm/preview'},
             {name:'Antico Stone World', pdf:'https://drive.google.com/file/d/17c94lSyz0a0hT9OgZYUGWsCPMnv8WzQD/preview'}
           ],
           'wooden-flooring':[
-            {name:'', pdf:''},
+            {name:'', pdf:''}, //this is inside cane webbings and is very huge
           ],
           'plywood':[
             {name:'', pdf:''},
@@ -992,7 +1016,107 @@
             {name:'Metal Wall Decor and Mosaic', pdf:'https://drive.google.com/file/d/1RbCoEoP3hITQXOcOY1uTxVRUMA2BL-ij/preview'}
           ],
           'louvres':[
-            {name:'', pdf:''},
+            {name:'ArchiLouvers by Vivre Panels', pdf:'https://drive.google.com/file/d/1ZbwOTv5BWgiw83buLGJBHj3hn2aL1cMU/preview'},
+            {name:'Interior Glovers Interlocking Panels', pdf:'https://drive.google.com/file/d/18SeOqPAuIL_ChShG2sM_BsBqdlLRsRQx/preview'},
+            {name:'Interior MDF Fluted Panels', pdf:'https://drive.google.com/file/d/1Tz3xhmkxEiNjHBjeYEmoCi3nPV7oQQb-/preview'},
+            {name:'MDF Louvres', pdf:'https://drive.google.com/file/d/1kZGahk69KvJh_b-UzYX_-oqXRhCVvxps/preview'},
+            {name:'MDF Fluted Panels', pdf:'https://drive.google.com/file/d/11YYRR3VMHMT2rV_M5ejCt9aYRqdBBLo_/preview'},
+            {name:'New Louver 2023', pdf:'https://drive.google.com/file/d/1t71_5JnsG5GbquGBmrqbXl6a5qrFtniR/preview'},
+            {name:'Aluclad Composite Exterior Cladding', pdf:'https://drive.google.com/file/d/17x8wgQQcFDPLJWlKdGOeZ20r80R-DTmZ/preview'},
+            {name:'Archi Louvres PS Seamless Wall Panels', pdf:'https://drive.google.com/file/d/1jmPZb0FF0llDJr_FpgfD-UsiyDfmniYe/preview'},
+            {name:'Archi Louvres by Vivre Panels', pdf:'https://drive.google.com/file/d/1gbNL1gEBRhBJeSaSRGwGsnafp9GX0JHB/preview'},
+            {name:'Barcode Abstracts series', pdf:'https://drive.google.com/file/d/1qoABhQx6fSvodau9NvRNQuWxVxCyFKxq/preview'},
+            {name:'Barcode by EQ', pdf:'https://drive.google.com/file/d/1lw362A28ASiRL2twitPhzSZsLZgiH98D/preview'},
+            {name:'Barcode solid series Louvres', pdf:'https://drive.google.com/file/d/1F18T18WUZrNFFp_VqVJ30aY_OJoxhGB0/preview'},
+            {name:'Barcode Wood series Louvres', pdf:'https://drive.google.com/file/d/1lYJztGyJs0-yfW_OpCcB3v5DIszEGV1q/preview'},
+            {name:'Bravia Zenith Wall Planks', pdf:'https://drive.google.com/file/d/1UHgqXDLqe2jdBCNHYz7rd1rsfItQ3O-G/preview'},
+            {name:'Class 20 by Treelam', pdf:'https://drive.google.com/file/d/1IR5A7P3EFhiUlSQIn0JtXeUnkJXjz76t/preview'},
+            {name:'Cressida Louvres', pdf:'https://drive.google.com/file/d/1pHV6TJ3z9Jnj9m4sVDMzqhyCmXwg1JpZ/preview'},
+            {name:'Cressida Skirts', pdf:'https://drive.google.com/file/d/1s5Ee0l0i3PPyb4bLG23OLv_Fdomi9Jvh/preview'},
+            {name:'Decolux by Vivre Panels', pdf:'https://drive.google.com/file/d/11qooAjd54n7m5oojhvHzhOF5lXeQO8Uh/preview'},
+            {name:'Emporio 2.0', pdf:'https://drive.google.com/file/d/1CrCeHCBYVuMxro8P8N9Q5908kxwNa586/preview'},
+            {name:'Emporio Louvres Interactive', pdf:'https://drive.google.com/file/d/1_t15DtG01rrdIPu4mA1GzZl65mWxQYf4/preview'},
+            {name:'Fleek by TreeLam', pdf:'https://drive.google.com/file/d/1W3qSfl_FEDeGFWL8n8QsP7aA7ab5d09F/preview'},
+            {name:'Fleek vol.2 by TreeLam', pdf:'https://drive.google.com/file/d/1Hee_fPy8ylLeG_S_tL_XwJCgbHvUL8Km/preview'},
+            {name:'Fleek lite vol.1', pdf:'https://drive.google.com/file/d/1_pJEBgZ3ugTffvsFYnqwCGOst1T5AqRo/preview'},
+            {name:'Fleek lite vol.2', pdf:'https://drive.google.com/file/d/1rRJX5OFR8BFtBan7zguZs2VMvVSxPeQQ/preview'},
+            {name:'Fluters panels', pdf:'https://drive.google.com/file/d/1dDplVkyfcN88wiAGOhfsMBC4pR_qQ69s/preview'},
+            {name:'Fluters E catalogue', pdf:'https://drive.google.com/file/d/1ONPqlrB2sTuUcaW4kD_ev8655s1p6rYH/preview'},
+            {name:'Flutters Vol2', pdf:'https://drive.google.com/file/d/1b2ItdUTzIBXrY3rzT5HoweZfoqdEfdQP/preview'},
+            {name:'Gallery Louvres', pdf:'https://drive.google.com/file/d/14UMg4iGbY-L14uf4X3di_M_h_O46meQq/preview'},
+            {name:'GLO MDF Fluted panels', pdf:'https://drive.google.com/file/d/1qG4Wx-NRwcgGSaBZWeZeJhVJZjQvg4ag/preview'},
+            {name:'Golirio Fusion Panel Touchable', pdf:'https://drive.google.com/file/d/11F2tInBtWS_cK5o5LfHE6tAzmEQTN3tU/preview'},
+            {name:'Gloirio Iris Interactive', pdf:'https://drive.google.com/file/d/1uvyI2K3AOhOaDMMR9kc7M029sz6EzqqB/preview'},
+            {name:'Glovers pdf', pdf:'https://drive.google.com/file/d/1NuO2GHTOIs3CCyh6MpcyNcGhk0ULw8ip/preview'},
+            {name:'Glovers 2024', pdf:'https://drive.google.com/file/d/1PPys1luO2wv1ZPpDF0QN1vagzxPJSXdy/preview'},
+            {name:'Iconic Pastels Treelam', pdf:'https://drive.google.com/file/d/1JtrNBJKlY-Xx6ltKarXARZ7YGRSZRe0k/preview'},
+            {name:'Ignis Mobile', pdf:'https://drive.google.com/file/d/1HoVM-Ysgg-Gle79_TBkdLuLqY6_DRQht/preview'},
+            {name:'Interior Lovres Interlocking Panels', pdf:'https://drive.google.com/file/d/1rYdyZmcp_LVLUljd7hN09dmOFeCBlySO/preview'},
+            {name:'Interior MDF Fluted Panels', pdf:'https://drive.google.com/file/d/1nogCkStW0WeMVdRoAuI5p4pFImlJute7/preview'},
+            {name:'Interior MDF Fluted panels', pdf:'https://drive.google.com/file/d/17a9HrgHOd9rlgwwpLoAIW1w9Uetjf2b5/preview'},
+            {name:'Iris Club Interactive', pdf:'https://drive.google.com/file/d/17oFz0fFg5OZaLquZqWX4l3iHksKVYVu9/preview'},
+            {name:'Iris Wall Panels', pdf:'https://drive.google.com/file/d/1z152sQVDFnECBl-SC_HXAhgf_f-KGfO1/preview'},
+            {name:'Jade Collection', pdf:'https://drive.google.com/file/d/1i4Sz5DeHjbx4yoAzcmtKZFVpRH1QruFb/preview'},
+            {name:'Jade Catalogue', pdf:'https://drive.google.com/file/d/16xcpUVJ3issRt5FF2gzdFglViQPF2vdk/preview'},
+            {name:'Louv4rt', pdf:'https://drive.google.com/file/d/19__YGCauKSrkcJryVRos8B787-nqaap7/preview'},
+            {name:'Louver Brochure', pdf:'https://drive.google.com/file/d/1J8rrphBas6oU4mzFuP0ejWALgSFs6vxG/preview'},
+            {name:'Louvres 2 PS Seanless 5 inch wall panels', pdf:'https://drive.google.com/file/d/1Vlqw0xjCwyh4xaA31-YpiVEa5kbcJ4kT/preview'},
+            {name:'Louvres Folder Doc', pdf:'https://drive.google.com/file/d/1U8IrC3zquatKpBjqKaMrt7EKS_PQRfTG/preview'},
+            {name:'Louvres PS Seamless Wall panels', pdf:'https://drive.google.com/file/d/1n8Vz4AiBx4ptfEvqA8Wi9NcwMUDdtW1r/preview'},
+            {name:'Louvres Ricardo', pdf:'https://drive.google.com/file/d/1-nhDuajurh2A6I8fS_5EfrLCVrYJjyQG/preview'},
+            {name:'Luxxouvres Volume 2', pdf:'https://drive.google.com/file/d/1b63I9XUqv-ZdtG0lRDv4zDq7X-vKK_DB/preview'},
+            {name:'Mann Oxido Louvres', pdf:'https://drive.google.com/file/d/1tNclZ95ha4jQbV3jcZB_OAwklYEmPcDx/preview'},
+            {name:'Mann Tuscany 5-8ft', pdf:'https://drive.google.com/file/d/1NlGUDgw5yvRbp6BeNq4aOR96RHsYEo-1/preview'},
+            {name:'Mann Tuscany 8ft', pdf:'https://drive.google.com/file/d/1xhJ57vrvdkdKTjy9EiP8VKeSRyn7SKlN/preview'},
+            {name:'Mann Tuscany 8ft', pdf:'https://drive.google.com/file/d/1D60FoPbQMdz9oVs3sZQSZ_8gjjzQqPCV/preview'},
+            {name:'Mann Tuscany 8ft', pdf:'https://drive.google.com/file/d/1qv44fLjPiOZwLwGJ6wv1GnDQvNhwQaCJ/preview'},
+            {name:'PDF Fluted Panel', pdf:'https://drive.google.com/file/d/14lAbxsIQ8l0JYFUHTpeZCjctwcp45mAa/preview'},
+            {name:'MDF Louvres by Treelam', pdf:'https://drive.google.com/file/d/1pqO5c-aTf5G-z0bwnKttoGTsb7t35vx1/preview'},
+            {name:'Mystic Pallete Patel Louvres', pdf:'https://drive.google.com/file/d/1-lBDrCJUhSa7J8o88CdVx6aOYdqeCKDi/preview'},
+            {name:'Mystic Prive ', pdf:'https://drive.google.com/file/d/1FMziU9WttgUQ-gxrfXXgxLektL7Jh8cL/preview'},
+            {name:'Oxido', pdf:'https://drive.google.com/file/d/13cxhWVMKEV9J14SlC_YeB7jyDNI1E7AR/preview'},
+            {name:'Prive XI Client facing', pdf:'https://drive.google.com/file/d/1aBDYevFEHf4xCNS9ncgho6gVjIUpQ_iD/preview'},
+            {name:'Project X by Treelam', pdf:'https://drive.google.com/file/d/16B0uggkcc9NkYOY1_xzxAQ5XqzIhzCqL/preview'},
+            {name:'Sirocco Catalogue', pdf:'https://drive.google.com/file/d/1eyuPXKdY8vBFFuv0Dy1Al8Lba0F6f2qY/preview'},
+            {name:'SK2 bronte louvres', pdf:'https://drive.google.com/file/d/10Is0pn81nqTJ7_8nq9hSEneCehYjuUYW/preview'},
+            {name:'SK2 Cinco Louvres', pdf:'https://drive.google.com/file/d/1zqEDZpxRn6n0h28Qe90ZWavgutTeCvXT/preview'},
+            {name:'Sk2 cinco louvres', pdf:'https://drive.google.com/file/d/19Z1YEi_da7BiJsLJkPjEoxHkmCDylJSL/preview'},
+            {name:'SK2 Fiona Louvres', pdf:'https://drive.google.com/file/d/1SJrs-pcHAztLbVJOi6OEaup_Y-HjmpBl/preview'},
+            {name:'SK2 Louvres 2022', pdf:'https://drive.google.com/file/d/1Z_jyrkU_K4ZPlnNUavqSa-sKtVIs0Opr/preview'},
+            {name:'SK2 orbital', pdf:'https://drive.google.com/file/d/1zRFRuG1Nre04CgXVS8Dl-i_FR6Scll3J/preview'},
+            {name:'sk2 pollux', pdf:'https://drive.google.com/file/d/1FVGZCb1jmmpiMs5TFM2A26ieKcGphUEG/preview'},
+            {name:'Snazzy ', pdf:'https://drive.google.com/file/d/1ziMJxIdWu89hk0DKAvd82EeOz3k_QwQl/preview'},
+            {name:'The Corian Surface, Premium Louvres Treelam', pdf:'https://drive.google.com/file/d/1RTrnx_Q9THQiMYhnoFL9hHn5iBnAzn-l/preview'},
+            {name:'Trendy louvres', pdf:'https://drive.google.com/file/d/1BlOQNrmzf6_aqKr_ZpMH1bUBoXBJAzRs/preview'},
+            {name:'Tuscany 6 client facing', pdf:'https://drive.google.com/file/d/1o6-V62YLo8i5JEwZp_mhtBnC-AXD9ZkO/preview'},
+            {name:'Tuscany 5', pdf:'https://drive.google.com/file/d/13cl_VLn32TrfbVrlL6LYrk0vLPnPRbnk/preview'},
+            {name:'Vivre Aluclad + L profiles', pdf:'https://drive.google.com/file/d/1btA5R-RZqv4IWj2Tj_HWm7Eekji0xv8j/preview'},
+            {name:'Vivre Apex Louvres for new Hieghts', pdf:'https://drive.google.com/file/d/1ZjnXXvtkhFIqlH7Eu7v7UTJm7Tx_kKXa/preview'},
+            {name:'Vivre Finesse', pdf:'https://drive.google.com/file/d/14GtYnLeDan2S6IUcI-e4Wy2VIQDDQi-o/preview'},
+            {name:'Vivre Louvres by Vivre panels', pdf:'https://drive.google.com/file/d/1B6KNBdriqllX8qo7WN6MRKSA6O9e17kd/preview'},
+            {name:'Vivre louvres', pdf:'https://drive.google.com/file/d/1ROLhreaAmmpsrym7gnxgj_nXt-kiWjMu/preview'},
+            {name:'Vivre panels portfolio', pdf:'https://drive.google.com/file/d/1AUhJlA4mU0KnW8tCNM1HEoDcs8PexpAL/preview'},
+            {name:'Vivre Profiles II', pdf:'https://drive.google.com/file/d/1xdpCfjUITgnDM3rLXpXtjoRISSDngyIp/preview'},
+            {name:'Vivre profiles III', pdf:'https://drive.google.com/file/d/16ysYJxTx4qWXjo3NgYPzajTPRwByGyo8/preview'},
+            {name:'Vivre Profiles Louvres', pdf:'https://drive.google.com/file/d/1mGm7pVA2dpM6DV2Nwy_PWB7wW8YFYRuD/preview'},
+            {name:'Vivre Profiles', pdf:'https://drive.google.com/file/d/1SbcvGhydOvq1KY1ad3dVkvGF8jzeQPZh/preview'},
+            {name:'Vivre Louvres Catalogue', pdf:'https://drive.google.com/file/d/1Z8420OsJw8c-5O5y-zmkcU0fVI4cDQKo/preview'},
+            {name:'Vivre Profiles', pdf:'https://drive.google.com/file/d/1-U97jsruld6opdNTdjqcLiunH4peCHNo/preview'},
+            {name:'WallLuxe', pdf:'https://drive.google.com/file/d/1KHCg-eWoqdS-kOVg2SHpf9rCQZDnK2Kq/preview'},
+            {name:'Wallon Calss 18 by Treelam', pdf:'https://drive.google.com/file/d/1nVbYw0AOwjrgSaMkYO9h5HY3NboLb_Z1/preview'},
+            {name:'Wallon Four TreeLam', pdf:'https://drive.google.com/file/d/14gUvjWlptotMD_rHII5cJGpMsPEFgefX/preview'},
+            {name:'Wallon Vol.2', pdf:'https://drive.google.com/file/d/1csAF-thINpaSh7WGFs0tTC2KG7_1uzlQ/preview'},
+            {name:'Wallon ONE', pdf:'https://drive.google.com/file/d/1qrg1m9jGCXnlTXTYuBT-uWw7cxcZ8ben/preview'},
+            {name:'Wallon THREE', pdf:'https://drive.google.com/file/d/1n5K87As5ka3wDQYVjtyFRKKgoSYrvBn9/preview'},
+            {name:'Wallon TWO', pdf:'https://drive.google.com/file/d/1Nify8EvFFMhfrwl1KlTC2GUkLEQmi6-w/preview'},
+            {name:'Wallon-1', pdf:'https://drive.google.com/file/d/1JNdnTsWL5Io8ZvlBYuENsWJiLGY1fLQA/preview'},
+            {name:'Woodline Louvres', pdf:'https://drive.google.com/file/d/1-8QlNKyK_jzAMoTAEIqxmxJqsg-s7fw-/preview'},
+            {name:'Woodline Vol.3', pdf:'https://drive.google.com/file/d/19QRMhEj2HhSaBVKO8mkyxcLfLuPbiQR8/preview'},
+            {name:'Woodline Vol.3', pdf:'https://drive.google.com/file/d/1fvp9kleW44pSfV8Ye_aDsODsM5IV-q6a/preview'},
+            {name:'Woodline Vol.5', pdf:'https://drive.google.com/file/d/16SAHTKwyl0yM44kTQSBbVTsL2-pPDZTs/preview'},
+            {name:'Woodline Vol.5', pdf:'https://drive.google.com/file/d/1OJw-q_AeTgWB78uJn9iRaMRCoOof47Kc/preview'}
+           
+            
           ],
           'evergreen-panels':[
             {name:'GLO Evergreen Plants', pdf:'https://drive.google.com/file/d/1IbEYpGY-qQCz6wHHD4znK9BAeHvDWhlv/preview'},
@@ -1022,6 +1146,45 @@
             
           ],
           'acrylic-sheets':[
+            {name:'Fluted Acrylic- EQ Fluted AcryLine', pdf:'https://drive.google.com/file/d/13cyLWP0QpKQ5w5YlEtZbXhWcLY_aDac7/preview'},
+            {name:'Fluted Acryclic- Estrella Fluted Acrylic 3mm', pdf:'https://drive.google.com/file/d/165rxWtKk0jJR5n0JbudrxUMJHGtA9Qy6/preview'},
+            {name:'Fluted Acryclic- Gloirio Flute Story', pdf:'https://drive.google.com/file/d/1MiffF3FpgKeOTVVoDBfKm1_HPhQmZEJb/preview'},
+            {name:'Fluted Acryclic- Wabi Sabi Fluted Acrylic by Treelam', pdf:'https://drive.google.com/file/d/1KSSNR1ZB7jdt1D9CsikaApkLiEpaxgv_/preview'},
+            {name:'Gloss Acryclic- Acrosheen Client Catalogue', pdf:'https://drive.google.com/file/d/1DZ7-IsElUoCcfva9lKNCMyuLDWlUjF-8/preview'},
+            {name:'Gloss Acryclic- Acrylite Client Facing', pdf:'https://drive.google.com/file/d/1479HTzrsRfGu6THF4jSi_7DMQBbTiGtM/preview'},
+            {name:'Gloss Acryclic- Acrysta 2.0 mm new client facing', pdf:'https://drive.google.com/file/d/18-PBo6yjYgo2OqpFxUuvW4J2ViFcszR5/preview'},
+            {name:'Gloss Acryclic- AcryVibe Anit Scratch Acrylic Laminates', pdf:'https://drive.google.com/file/d/1KpZ1CXFJTT-xtEZn1ZBuEgub3qR6pFXP/preview'},
+            {name:'Gloss Acryclic- AcryVibe E catalogue', pdf:'https://drive.google.com/file/d/1dDjaDhJEy1aDNpZh3rEjt80fiPYPXa9H/preview'},
+            {name:'Gloss Acryclic- Artexa Edition', pdf:'https://drive.google.com/file/d/10cH0FJeLgbZoZ4mylzlTxyboskFh82l1/preview'},
+            {name:'Gloss Acryclic- Bravia Acrylite', pdf:'https://drive.google.com/file/d/1u_YFkZgTjUmNtWPl2ZtQw5H8F_NkRjp1/preview'},
+            {name:'Gloss Acryclic- Colorito', pdf:'https://drive.google.com/file/d/1Cxofjki3utV1lbiwz5obdjVo0t4c4ANX/preview'},
+            {name:'Gloss Acryclic- Crystal Vision', pdf:'https://drive.google.com/file/d/1hB0zsOEGCXBsw_652qrP7_SpXEO-iD3C/preview'},
+            {name:'Gloss Acryclic- Full View Samples ontari', pdf:'https://drive.google.com/file/d/13S_i25xkW_a3UuepG2kozh0VjEEB2NC6/preview'},
+            {name:'Gloss Acryclic- Glace', pdf:'https://drive.google.com/file/d/16E5duGGsWrxqsJWlOj_HaeaigXP6GI5O/preview'},
+            {name:'Gloss Acryclic- Glazze Catalogue', pdf:'https://drive.google.com/file/d/1dNYJLOBoK_ijpp5AgcpI_yWSBGC9dEiA/preview'},
+            {name:'Gloss Acryclic- Miracco mobile', pdf:'https://drive.google.com/file/d/1PGPh9Py0mK5zsT_iK05tqJ06A3HAcRJg/preview'},
+            {name:'Gloss Acryclic- Ontari Acryclic ', pdf:'https://drive.google.com/file/d/1N9ICl34_cbfbYO_3AU2Sw8qdLLvYDtTs/preview'},
+            {name:'Gloss Acryclic- Ontari Solid', pdf:'https://drive.google.com/file/d/1ZLdpQaL34u5Jmi6W1y6Efk6w-EF5NKGZ/preview'},
+            {name:'Gloss Acryclic- Sereno Marble', pdf:'https://drive.google.com/file/d/11O5BiPlorvJG1IOerGEhhR6EjbqEME3u/preview'},
+            {name:'Gloss Acryclic- sk2 Arteza Edition', pdf:'https://drive.google.com/file/d/1A8RGk_vfYKVq91aPBAN0vRH3kQOgYklJ/preview'},
+            {name:'Gloss Acryclic- Sk2 Carlito', pdf:'https://drive.google.com/file/d/10q3xQydhnqP_f7bzOE85qpTAEm-FRV6G/preview'},
+            {name:'Gloss Acryclic- Sk2 Nesta', pdf:'https://drive.google.com/file/d/1HMEvWABfS1N9wRq7PRLX63_rghELPL5x/preview'},
+            {name:'Gloss Acryclic- Sk2 Stella', pdf:'https://drive.google.com/file/d/10dsWEXUK-E_vf7rBk5KTkGyDrxBK4L-N/preview'},
+            {name:'Gloss Acryclic- Vivasaa 2 Pre-sanded ASA Deco Sheets', pdf:'https://drive.google.com/file/d/17BSjFCR9h3jDUdLEVHD6W2gyo1xlrtsf/preview'},
+            {name:'Matt Acrylic- Acrosheen Client Catalogue', pdf:'https://drive.google.com/file/d/1uBtiLxjcs-9duqopfKGwlaOu9FmtaTOB/preview'},
+            {name:'Matt Acrylic- Aqvizo', pdf:'https://drive.google.com/file/d/1_tzQOXN9FRghJa2MA4aUJ-DJ7RTRukFl/preview'},
+            {name:'Matt Acrylic- Gloirio Flute Story', pdf:'https://drive.google.com/file/d/18mUQOcAXKysiEexu-Bj3F-g5bf3lI4cm/preview'},
+            {name:'Matt Acrylic- SK2 Aqvizo', pdf:'https://drive.google.com/file/d/1660lZck9LNLrE8mX8ZSkuKGeIzBibCMN/preview'},
+            {name:'Matt Acrylic- Stone Fluted', pdf:'https://drive.google.com/file/d/1r0IlW9LBeryYD3rTFwUkm97yD5A-ZkN2/preview'},
+            {name:'Matt Acryclic Vivasaa 2 Pre Sanded ASA Deco Sheets', pdf:'https://drive.google.com/file/d/1J0AlIYV7cE1jfZC3TlDVbiI_e7GN7YVJ/preview'},
+            {name:'Mirror Engraved- Ayna Panels ', pdf:'https://drive.google.com/file/d/1YzplQ_RxPlZP1tyvZqpFxiRqBC-4W7hA/preview'},
+            {name:'Mirror Engraved- Acrosheen Client Catalogue', pdf:'https://drive.google.com/file/d/1U1GCA5gULZtltaMOVKMHM2EoDlnywy6r/preview'},
+            {name:'Mirror Engraved- Bravia Acrylite', pdf:'https://drive.google.com/file/d/1f_hP6FO2rQ6mBgFMWtt89d15VilN6DIF/preview'},
+            {name:'Mirror Engraved- Desire Sheet', pdf:'https://drive.google.com/file/d/1ZEMRzbcDQS-TK8unCvMeNaQ8ue-nqYv2/preview'},
+            {name:'Mirror Engraved- GLO-LAM Sparkling Surface', pdf:'https://drive.google.com/file/d/1RA44JBL5zBgN3hTgqwMxqMN4p6ALayEJ/preview'},
+            {name:'Mirror Engraved- Marvel Acryclic Range', pdf:'https://drive.google.com/file/d/11ZUHpiywEA3vUNnLGOf2ZJBo52giiQDv/preview'},
+            {name:'Mirror Engraved- Miracco Mobile', pdf:'https://drive.google.com/file/d/1cLbofymVapXeKiSXcV2EsCGwyM9lFIHl/preview'},
+            {name:'Mirror Engraved- Miracco Catalogue', pdf:'https://drive.google.com/file/d/1oLMJSLscCR-O04yhVdxDfkpZDXQkIQon/preview'}
             
           ],
           'asa-sheets':[
@@ -1040,7 +1203,12 @@
             {name:'Alabster Client Facing', pdf:'https://drive.google.com/file/d/12WoyKQ2ibV9s4KHIQP6zRX6v2ZOwEDKv/preview'}
           ],
           'blinds':[
-            {name:'', pdf:''},
+            {name:'Art work Blinds Vol I', pdf:'https://drive.google.com/file/d/119OKJGXlch5PdYjWiuintTLodEokT-GP/preview'},
+            {name:'Art Work Blinds Vol II', pdf:'https://drive.google.com/file/d/1u973sXy1h9733WwYPpQxOEHLWUKiGa_N/preview'},
+            {name:'Art Work Blinds Vol III', pdf:'https://drive.google.com/file/d/1CXnK4pKsLrigzaXK72s92sgpIJRS4DtP/preview'},
+            {name:'Art Work Blinds Vol IV', pdf:'https://drive.google.com/file/d/1oYQ4SjMsJ0LTx6bZdbujqibWbxBNKtGu/preview'},
+            {name:'Classica Roller Blinds Munshi', pdf:'https://drive.google.com/file/d/1Kg2J6IiuPIdCuR11cEsmwNr12zaNIzgD/preview'},
+            {name:'Munshi Digital Flower Wisper Blinds', pdf:'https://drive.google.com/file/d/1zn4dAADW3bSCFT8pHVffKBH3jUvCNUmj/preview'},
           ],
           'cane-webbings':[
             {name:'Rattan Cane Client Facing Catalogue', pdf:'https://drive.google.com/file/d/1J3ZkfNY2XESQEMxYvMDMNQk3tpbltvFb/preview'},
@@ -1049,13 +1217,23 @@
             {name:'Interior Cane Webbing Rolls', pdf:'https://drive.google.com/file/d/1Z1aPEybKDJKZdeCTnptyxolJeXkLea-E/preview'}
           ],
           'ceiling':[
-            {name:'', pdf:''},
+            {name:'Antique Colors', pdf:'https://drive.google.com/file/d/1kQ5QxT40pOGfPrXOqJ59iw4nDpgP4Xk2/preview'},
+            {name:'Bravia Marquee PVC Ceiling Final', pdf:'https://drive.google.com/file/d/1_j0gGHO79lCHnNTLNk65m7MVBxvEF0HH/preview'},
+            {name:'Ceiling Brochure', pdf:'https://drive.google.com/file/d/1NOqVk5FPSr_OpG38H--GgXgT2HKBkzv0/preview'},
+            {name:'Elevate Interior Ceiling Tiles', pdf:'https://drive.google.com/file/d/1DTu84b_k1UjkWWpv1jSWLr2ZGyOZ0Vw0/preview'},
+            {name:'New Pare Vertica Soffit Panels', pdf:'https://drive.google.com/file/d/1Asw2G2XFwiO5QvGd9DM5oTh0D3JEtTbF/preview'},
+            {name:'Pare Dura', pdf:'https://drive.google.com/file/d/1aWGjjvcm8EXOI6wMLzYBoRaNMFYZqsiQ/preview'},
+            {name:'Pare Soffit Forest Collection', pdf:'https://drive.google.com/file/d/1gkQ6vyfJ9iloMFNtACdPj27k1pIolVXf/preview'},
+            {name:'Pare Soffit Board', pdf:'https://drive.google.com/file/d/12-Y61uXJYr8-w_zMLnoTh8KJRKZTvKTr/preview'}
+
           ],
           'corian-surface':[
-            {name:'', pdf:''},
+            {name:'', pdf:''}
+            
           ],
           'exterior-products':[
-            {name:'', pdf:''},
+          {name:'Ext & Int Charcopanel 3d Panels', pdf:'https://drive.google.com/file/d/1CWpnuEkxQptv4uGVZ-URld7dkBed2z6R/preview'},
+          {name:'Aluclad Composite Exterior Cladding', pdf:'https://drive.google.com/file/d/1vOQTTkZUkohJ1LQ_d8XdExLfrz2uSMv0/preview'}
           ],
           'laminated-particleboards':[
             {name:'', pdf:''},
@@ -1064,22 +1242,42 @@
             {name:'', pdf:''},
           ],
           'metal-sheets':[
-            {name:'', pdf:''},
+            {name:'Artwall Ecatalogue', pdf:'https://drive.google.com/file/d/1r7U_tKVj3AXsQSznQBfSmVenLLKVD9nn/preview'},
+            {name:'Sheer Design Bravia Code', pdf:'https://drive.google.com/file/d/1i9ZNEkdAORnYzM6O8EQ2y2hzADwwTMxA/preview'}
           ],
           'pu-sheets':[
-            {name:'', pdf:''},
+            {name:'Bravia Marquee PVC Ceiling', pdf:'https://drive.google.com/file/d/1cT_Qg4fP19yV4W6D8DoxclTi-0EHXp6Z/preview'},
+            {name:'Orison Marble Collection', pdf:'https://drive.google.com/file/d/1o6jvm_QJSzM1etYpsFMmzXpv3zveWEJR/preview'},
+            {name:'PU TreeLam', pdf:'https://drive.google.com/file/d/1z_AVyC6RBktfiljjgHgW4wPbB7DGuWc9/preview'},
+            {name:'TreeLam PU Veneer', pdf:'https://drive.google.com/file/d/1hVrOqIp8fvjuOqh5i_UzFhvfaQnfFn0o/preview'},
+            {name:'Woodero PU Veneer Treelam', pdf:'https://drive.google.com/file/d/1DjsghfRe2Z1XLkMNegtcNkLpXG_ZA6mz/preview'},
+            {name:'Woodero Vol.2', pdf:'https://drive.google.com/file/d/19CME5GJJwIzzfJ7PSytNBax0HVhVLy5o/preview'}
+           
           ],
           'veneers':[
-            {name:'', pdf:''},
+            {name:'Teaque Brochure', pdf:'https://drive.google.com/file/d/1ZQTNCNy3SBj4xjdvuUQL40hpo91IgkSE/preview'},
+            {name:'Chess 2020', pdf:'https://drive.google.com/file/d/1ZsnxM9OTcP271FjHVVmnxDg30TGejYIH/preview'},
+            {name:'Decor Slim Stone Veneer ', pdf:'https://drive.google.com/file/d/19v63JigyeGP0pBeYjm6IutDUDXculea_/preview'},
+            {name:'Embossed Veneer', pdf:'https://drive.google.com/file/d/1xjMdVZPbyvbqhimLsEeiNiIHF_2Eijni/preview'},
+            {name:'Magvee Veneer', pdf:'https://drive.google.com/file/d/1qLoU-rIQzWK-c__-8wBbSrC59hFz9APr/preview'},
+            {name:'Matt Marble veneer 900 Series', pdf:'https://drive.google.com/file/d/1Ksg9aPwI-pEeauG1rp5KHG_DU7HmXGu8/preview'},
+            {name:'NAT veneer', pdf:'https://drive.google.com/file/d/1cs1ETMRW3NWuVwDsWK167EGjCnBTfxQV/preview'},
+            {name:'Antico Catalogue', pdf:'https://drive.google.com/file/d/19FpNFP-4A78hL3poarxQIsw9GIJBo1da/preview'},
+            {name:'Pyramid Catalogue', pdf:'https://drive.google.com/file/d/1k5o0iZd73Yl-FZGtehaUZRK6PkLMkJqr/preview'},
+            {name:'Recon', pdf:'https://drive.google.com/file/d/1YCa6qoseiK_2Z4XrNdsNui7D3njOSXyG/preview'},
+            {name:'Teak Collection', pdf:'https://drive.google.com/file/d/1aTgCzqCcSyLLneS_xDL4wnF17rLKj57H/preview'},
+            {name:'Teak Veneer', pdf:'https://drive.google.com/file/d/1cPPM05xpA76Yxl3ViZCMlsefZe4Kh1Hx/preview'},
+            {name:'Veneer Details', pdf:'https://drive.google.com/file/d/1C-qR1lXFAZVqBWKfrSuRbPIxjPQcvblT/preview'}
+    
           ],
           'wall-highlighters':[
             {name:'', pdf:''},
           ],
           'door-skins':[
-            {name:'', pdf:''},
+            {name:'Door Skin E-Catalogue', pdf:'https://drive.google.com/file/d/1F728mLKPn2IQB9ziaHiN-IlBp_s9MgI4/preview'},
           ],
           'others':[
-            {name:'', pdf:''},
+            {name:'Stonelam Sales Deck', pdf:'https://drive.google.com/file/d/1leDfBnWuIv_RI64m-HnU6LGa3qe39Woo/preview'},
           ]
 
       };
