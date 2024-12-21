@@ -19129,4 +19129,68 @@ button:hover {
 	text-decoration: none;
 	cursor: pointer;
   }
+  .product__image-container {
+	position: relative;
+	cursor: pointer;
+	overflow: hidden;
+	width: 100%;
+	height: auto;
+  }
   
+  .product__image {
+	width: 100%;
+	height: auto;
+	display: block;
+  }
+  
+  .product__overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.5);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	opacity: 0;
+	transition: opacity 0.3s ease;
+  }
+  
+  /* Show overlay by default on mobile */
+  @media (max-width: 768px) {
+	.product__overlay {
+	  opacity: 1;
+	  background: rgba(0, 0, 0, 0.3);
+	}
+	
+	.view-button {
+	  background: rgba(0, 0, 0, 0.7);
+	  padding: 8px 16px;
+	  border-radius: 4px;
+	}
+  }
+  
+  /* Desktop hover effect */
+  @media (min-width: 769px) {
+	.product__image-container:hover .product__overlay {
+	  opacity: 1;
+	}
+  }
+  
+  .view-text {
+	color: white;
+	font-size: 1.2rem;
+	font-weight: bold;
+	text-transform: uppercase;
+  }
+  
+  
+  
+  @media (max-width: 768px) {
+	.modal-content {
+	  margin: 10% auto;
+	  width: 95%;
+	  padding: 15px;
+	}
+  }
