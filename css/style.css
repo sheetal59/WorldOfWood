@@ -19039,6 +19039,8 @@ select {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.4); /* Black background with transparency */
     padding-top: 100px;
+	overflow: auto;
+	z-index: 1050;
 }
 
 .modal-content {
@@ -19049,6 +19051,7 @@ select {
     width: 100%;
     max-width: 1100px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+	
 }
 
 /* Close Button */
@@ -19096,24 +19099,33 @@ button:hover {
 .popup {
 	display: none; /* Hidden by default */
 	position: fixed;
-	z-index: 1; /* Sit on top */
+	z-index: 1050; /* Sit on top */
 	left: 0;
 	top: 0;
 	width: 100%;
 	height: 100%;
-	overflow: auto; /* Enable scroll if needed */
+	overflow: hidden; /* Enable scroll if needed */
 	background-color: rgba(0, 0, 0, 0.5); /* Black with opacity */
+	
   }
   
   /* Popup content */
   .popup-content {
-	background-color: white;
+	background-color: #fcffc1;
+	text-decoration: #000;
 	margin: 15% auto;
 	padding: 20px;
 	border: 1px solid #888;
 	border-radius: 5%;
-	width: 50%; /* Change size as needed */
+	width: 30%; /* Change size as needed */
   }
+  @media (max-width: 768px) {
+	.popup-content {
+	  margin: 10% auto;
+	  width: 95%;
+	  padding: 15px;
+	}
+}
   
   /* Close button */
   .close {
