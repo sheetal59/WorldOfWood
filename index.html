@@ -156,7 +156,7 @@
               </p>
           </div>
           <div class="about-us-video">
-              <video controls>
+              <video controls autoplay loop muted>
                   <source src="images/wowvideo.mp4" type="video/mp4">
                   Your browser does not support the video tag.
               </video>
@@ -173,276 +173,466 @@
               <div class="section__header-element"><a class="link-cta" href="#">view all products</a></div>
             </div>
             <div class="isotope" data-isotope-layout="fitRows" data-isotope-group="products">
+        
               <div class="row row-offset-2">
                 <div class="col-6 col-md-4 col-lg-3 isotope-item" data-filter="Category 1">
-                  <!-- Product-->
-                  <article class="product" > <a class="product__image-wrap" href="#"><img class="product__image" src="images/product-01-210x200.jpg" alt="" width="210" height="200"/></a>
-                    <div class="product__main" >
+                  <!--product-->
+                  <article class="product">
+                    <div class="product__image-container" onclick="openModal('laminates')">
+                      <img class="product__image" src="images/product-01-210x200.jpg" alt="" width="210" height="200"/>
+                      <div class="product__overlay">
+                        <div class="view-button">
+                          <span class="view-text">View</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="product__main">
                       <p class="product__title"><a href="#">Laminates</a></p>
                       <p class="product__price"></p>
                     </div>
-                    <div class="product__footer" onclick="openModal('laminates')"><a class="button button-xs button-gray-2" href="#">details</a></div>
                   </article>
                 </div>
-                <div class="col-6 col-md-4 col-lg-3 isotope-item" data-filter="Category 2">
-                  <!-- Product-->
-                  <article class="product"> <a class="product__image-wrap" href="#"><img class="product__image" src="images/product-02-210x200.jpg" alt="" width="210" height="200"/></a>
+                <div class="col-6 col-md-4 col-lg-3 isotope-item" data-filter="Category 1">
+                  <!--product-->
+                  <article class="product">
+                    <div class="product__image-container" onclick="openModal('fabric-sheets')">
+                      <img class="product__image" src="images/product-02-210x200.jpg" alt="" width="210" height="200"/>
+                      <div class="product__overlay">
+                        <div class="view-button">
+                          <span class="view-text">View</span>
+                        </div>
+                      </div>
+                    </div>
                     <div class="product__main">
                       <p class="product__title"><a href="#">Fabric Sheets</a></p>
                       <p class="product__price"></p>
                     </div>
-                    <div class="product__footer" onclick="openModal('fabric-sheets')"><a class="button button-xs button-gray-2" href="#">details</a></div>
                   </article>
                 </div>
                 <div class="col-6 col-md-4 col-lg-3 isotope-item" data-filter="Category 1">
-                  <!-- Product-->
-                  <article class="product"> <a class="product__image-wrap" href="#"><img class="product__image" src="images/product-03-210x200.jpg" alt="" width="210" height="200"/></a>
+                  <!--product-->
+                  <article class="product">
+                    <div class="product__image-container" onclick="openModal('wall-mouldings')">
+                      <img class="product__image" src="images/product-03-210x200.jpg" alt="" width="210" height="200"/>
+                      <div class="product__overlay">
+                        <div class="view-button">
+                          <span class="view-text">View</span>
+                        </div>
+                      </div>
+                    </div>
                     <div class="product__main">
                       <p class="product__title"><a href="#">Wall Mouldings</a></p>
                       <p class="product__price"></p>
                     </div>
-                    <div class="product__footer" onclick="openModal('wall-mouldings')"><a class="button button-xs button-gray-2" href="#">details</a></div>
                   </article>
                 </div>
-                <div class="col-6 col-md-4 col-lg-3 isotope-item" data-filter="Category 2">
-                  <!-- Product-->
-                  <article class="product"> <a class="product__image-wrap" href="#"><img class="product__image" src="images/product-04-210x200.jpg" alt="" width="210" height="200"/></a>
+                <div class="col-6 col-md-4 col-lg-3 isotope-item" data-filter="Category 1">
+                  <!--product-->
+                  <article class="product">
+                    <div class="product__image-container" onclick="openModal('wallpapers')">
+                      <img class="product__image" src="images/product-04-210x200.jpg" alt="" width="210" height="200"/>
+                      <div class="product__overlay">
+                        <div class="view-button">
+                          <span class="view-text">View</span>
+                        </div>
+                      </div>
+                    </div>
                     <div class="product__main">
                       <p class="product__title"><a href="#">Wallpapers</a></p>
                       <p class="product__price"></p>
                     </div>
-                    <div class="product__footer" onclick="openModal('wallpapers')"><a class="button button-xs button-gray-2" href="#">details</a></div>
                   </article>
                 </div>
                 
                 <div class="col-6 col-md-4 col-lg-3 isotope-item" data-filter="Category 1">
-                  <!-- Product-->
-                  <article class="product"> <a class="product__image-wrap" href="#"><img class="product__image" src="images/product-06-210x200.jpg" alt="" width="210" height="200"/></a>
+                  <!--product-->
+                  <article class="product">
+                    <div class="product__image-container" onclick="openModal('stone-veneers')">
+                      <img class="product__image" src="images/product-06-210x200.jpg" alt="" width="210" height="200"/>
+                      <div class="product__overlay">
+                        <div class="view-button">
+                          <span class="view-text">View</span>
+                        </div>
+                      </div>
+                    </div>
                     <div class="product__main">
                       <p class="product__title"><a href="#">Stone Veneers</a></p>
                       <p class="product__price"></p>
                     </div>
-                    <div class="product__footer" onclick="openModal('stone-veneers')"><a class="button button-xs button-gray-2" href="#">details</a></div>
                   </article>
                 </div>
                 <div class="col-6 col-md-4 col-lg-3 isotope-item" data-filter="Category 1">
-                  <!-- Product-->
-                  <article class="product"> <a class="product__image-wrap" href="#"><img class="product__image" src="images/product-07-210x200.jpg" alt="" width="210" height="200"/></a>
+                  <!--product-->
+                  <article class="product">
+                    <div class="product__image-container" onclick="openModal('wooden-flooring')">
+                      <img class="product__image" src="images/product-07-210x200.jpg" alt="" width="210" height="200"/>
+                      <div class="product__overlay">
+                        <div class="view-button">
+                          <span class="view-text">View</span>
+                        </div>
+                      </div>
+                    </div>
                     <div class="product__main">
                       <p class="product__title"><a href="#">Wooden Flooring</a></p>
                       <p class="product__price"></p>
                     </div>
-                    <div class="product__footer" onclick="openModal('wooden-flooring')"><a class="button button-xs button-gray-2" href="#">details</a></div>
                   </article>
                 </div>
                 <div class="col-6 col-md-4 col-lg-3 isotope-item" data-filter="Category 1">
-                  <!-- Product-->
-                  <article class="product"> <a class="product__image-wrap" href="#"><img class="product__image" src="images/product-08-210x200.jpg" alt="" width="210" height="200"/></a>
+                  <!--product-->
+                  <article class="product">
+                    <div class="product__image-container" onclick="openModal('plywood')">
+                      <img class="product__image" src="images/product-08-210x200.jpg" alt="" width="210" height="200"/>
+                      <div class="product__overlay">
+                        <div class="view-button">
+                          <span class="view-text">View</span>
+                        </div>
+                      </div>
+                    </div>
                     <div class="product__main">
                       <p class="product__title"><a href="#">Plywood and Alternates</a></p>
                       <p class="product__price"></p>
                     </div>
-                    <div class="product__footer" onclick="openModal('plywood')"><a class="button button-xs button-gray-2" href="#">details</a></div>
                   </article>
                 </div>
                 <div class="col-6 col-md-4 col-lg-3 isotope-item" data-filter="Category 1">
-                  <!-- Product-->
-                  <article class="product"> <a class="product__image-wrap" href="#"><img class="product__image" src="images/product-09-210x200.jpg" alt="" width="210" height="200"/></a>
+                  <!--product-->
+                  <article class="product">
+                    <div class="product__image-container" onclick="openModal('mosaics')">
+                      <img class="product__image" src="images/product-09-210x200.jpg" alt="" width="210" height="200"/>
+                      <div class="product__overlay">
+                        <div class="view-button">
+                          <span class="view-text">View</span>
+                        </div>
+                      </div>
+                    </div>
                     <div class="product__main">
                       <p class="product__title"><a href="#">Mosaics</a></p>
                       <p class="product__price"></p>
                     </div>
-                    <div class="product__footer" onclick="openModal('mosaics')"><a class="button button-xs button-gray-2" href="#">details</a></div>
                   </article>
                 </div>
                 <div class="col-6 col-md-4 col-lg-3 isotope-item" data-filter="Category 1">
-                  <!-- Product-->
-                  <article class="product"> <a class="product__image-wrap" href="#"><img class="product__image" src="images/product-10-210x200.jpg" alt="" width="210" height="200"/></a>
+                  <!--product-->
+                  <article class="product">
+                    <div class="product__image-container" onclick="openModal('louvres')">
+                      <img class="product__image" src="images/product-10-210x200.jpg" alt="" width="210" height="200"/>
+                      <div class="product__overlay">
+                        <div class="view-button">
+                          <span class="view-text">View</span>
+                        </div>
+                      </div>
+                    </div>
                     <div class="product__main">
                       <p class="product__title"><a href="#">Louvres</a></p>
                       <p class="product__price"></p>
                     </div>
-                    <div class="product__footer" onclick="openModal('louvres')"><a class="button button-xs button-gray-2" href="#">details</a></div>
                   </article>
                 </div>
                 <div class="col-6 col-md-4 col-lg-3 isotope-item" data-filter="Category 1">
-                  <!-- Product-->
-                  <article class="product"> <a class="product__image-wrap" href="#"><img class="product__image" src="images/product-11-210x200.jpg" alt="" width="210" height="200"/></a>
+                  <!--product-->
+                  <article class="product">
+                    <div class="product__image-container" onclick="openModal('evergreen-panels')">
+                      <img class="product__image" src="images/product-11-210x200.jpg" alt="" width="210" height="200"/>
+                      <div class="product__overlay">
+                        <div class="view-button">
+                          <span class="view-text">View</span>
+                        </div>
+                      </div>
+                    </div>
                     <div class="product__main">
                       <p class="product__title"><a href="#">Evergreen Panels</a></p>
                       <p class="product__price"></p>
                     </div>
-                    <div class="product__footer" onclick="openModal('evergreen-panels')"><a class="button button-xs button-gray-2" href="#">details</a></div>
                   </article>
                 </div>
                 <div class="col-6 col-md-4 col-lg-3 isotope-item" data-filter="Category 1">
-                  <!-- Product-->
-                  <article class="product"> <a class="product__image-wrap" href="#"><img class="product__image" src="images/product-12-210x200.jpg" alt="" width="210" height="200"/></a>
+                  <!--product-->
+                  <article class="product">
+                    <div class="product__image-container" onclick="openModal('charcoal-highlighters')">
+                      <img class="product__image" src="images/product-12-210x200.jpg" alt="" width="210" height="200"/>
+                      <div class="product__overlay">
+                        <div class="view-button">
+                          <span class="view-text">View</span>
+                        </div>
+                      </div>
+                    </div>
                     <div class="product__main">
                       <p class="product__title"><a href="#">Charcoal Highlighters</a></p>
                       <p class="product__price"></p>
                     </div>
-                    <div class="product__footer" onclick="openModal('charcoal-highlighters')"><a class="button button-xs button-gray-2" href="#">details</a></div>
                   </article>
                 </div>
                 <div class="col-6 col-md-4 col-lg-3 isotope-item" data-filter="Category 1">
-                  <!-- Product-->
-                  <article class="product"> <a class="product__image-wrap" href="#"><img class="product__image" src="images/product-13-210x200.jpg" alt="" width="210" height="200"/></a>
+                  <!--product-->
+                  <article class="product">
+                    <div class="product__image-container" onclick="openModal('acrylic-sheets')">
+                      <img class="product__image" src="images/product-13-210x200.jpg" alt="" width="210" height="200"/>
+                      <div class="product__overlay">
+                        <div class="view-button">
+                          <span class="view-text">View</span>
+                        </div>
+                      </div>
+                    </div>
                     <div class="product__main">
                       <p class="product__title"><a href="#">Acrylic Sheets</a></p>
                       <p class="product__price"></p>
                     </div>
-                    <div class="product__footer" onclick="openModal('acrylic-sheets')"><a class="button button-xs button-gray-2" href="#">details</a></div>
                   </article>
                 </div>
                 <div class="col-6 col-md-4 col-lg-3 isotope-item" data-filter="Category 1">
-                  <!-- Product-->
-                  <article class="product"> <a class="product__image-wrap" href="#"><img class="product__image" src="images/product-14-210x200.jpg" alt="" width="210" height="200"/></a>
+                  <!--product-->
+                  <article class="product">
+                    <div class="product__image-container" onclick="openModal('asa-sheets')">
+                      <img class="product__image" src="images/product-14-210x200.jpg" alt="" width="210" height="200"/>
+                      <div class="product__overlay">
+                        <div class="view-button">
+                          <span class="view-text">View</span>
+                        </div>
+                      </div>
+                    </div>
                     <div class="product__main">
                       <p class="product__title"><a href="#">ASA Sheets</a></p>
                       <p class="product__price"></p>
                     </div>
-                    <div class="product__footer" onclick="openModal('asa-sheets')"><a class="button button-xs button-gray-2" href="#">details</a></div>
                   </article>
                 </div>
                 <div class="col-6 col-md-4 col-lg-3 isotope-item" data-filter="Category 1">
-                  <!-- Product-->
-                  <article class="product"> <a class="product__image-wrap" href="#"><img class="product__image" src="images/product-15-210x200.jpg" alt="" width="210" height="200"/></a>
+                  <!--product-->
+                  <article class="product">
+                    <div class="product__image-container" onclick="openModal('backlit-alabasters')">
+                      <img class="product__image" src="images/product-15-210x200.jpg" alt="" width="210" height="200"/>
+                      <div class="product__overlay">
+                        <div class="view-button">
+                          <span class="view-text">View</span>
+                        </div>
+                      </div>
+                    </div>
                     <div class="product__main">
                       <p class="product__title"><a href="#">Backlit and Alabasters</a></p>
                       <p class="product__price"></p>
                     </div>
-                    <div class="product__footer" onclick="openModal('backlit-alabasters')"><a class="button button-xs button-gray-2" href="#">details</a></div>
                   </article>
                 </div>
                 <div class="col-6 col-md-4 col-lg-3 isotope-item" data-filter="Category 1">
-                  <!-- Product-->
-                  <article class="product"> <a class="product__image-wrap" href="#"><img class="product__image" src="images/product-16-210x200.jpg" alt="" width="210" height="200"/></a>
+                  <!--product-->
+                  <article class="product">
+                    <div class="product__image-container" onclick="openModal('blinds')">
+                      <img class="product__image" src="images/product-16-210x200.jpg" alt="" width="210" height="200"/>
+                      <div class="product__overlay">
+                        <div class="view-button">
+                          <span class="view-text">View</span>
+                        </div>
+                      </div>
+                    </div>
                     <div class="product__main">
                       <p class="product__title"><a href="#">Blinds</a></p>
                       <p class="product__price"></p>
                     </div>
-                    <div class="product__footer" onclick="openModal('blinds')"><a class="button button-xs button-gray-2" href="#">details</a></div>
                   </article>
                 </div>
                 <div class="col-6 col-md-4 col-lg-3 isotope-item" data-filter="Category 1">
-                  <!-- Product-->
-                  <article class="product"> <a class="product__image-wrap" href="#"><img class="product__image" src="images/product-17-210x200.jpg" alt="" width="210" height="200"/></a>
+                  <!--product-->
+                  <article class="product">
+                    <div class="product__image-container" onclick="openModal('cane-webbings')">
+                      <img class="product__image" src="images/product-17-210x200.jpg" alt="" width="210" height="200"/>
+                      <div class="product__overlay">
+                        <div class="view-button">
+                          <span class="view-text">View</span>
+                        </div>
+                      </div>
+                    </div>
                     <div class="product__main">
                       <p class="product__title"><a href="#">Cane Webbings</a></p>
                       <p class="product__price"></p>
                     </div>
-                    <div class="product__footer" onclick="openModal('cane-webbings')"><a class="button button-xs button-gray-2" href="#">details</a></div>
                   </article>
                 </div>
                 <div class="col-6 col-md-4 col-lg-3 isotope-item" data-filter="Category 1">
-                  <!-- Product-->
-                  <article class="product"> <a class="product__image-wrap" href="#"><img class="product__image" src="images/product-18-210x200.jpg" alt="" width="210" height="200"/></a>
+                  <!--product-->
+                  <article class="product">
+                    <div class="product__image-container" onclick="openModal('ceiling')">
+                      <img class="product__image" src="images/product-18-210x200.jpg" alt="" width="210" height="200"/>
+                      <div class="product__overlay">
+                        <div class="view-button">
+                          <span class="view-text">View</span>
+                        </div>
+                      </div>
+                    </div>
                     <div class="product__main">
                       <p class="product__title"><a href="#">Ceiling</a></p>
                       <p class="product__price"></p>
                     </div>
-                    <div class="product__footer" onclick="openModal('ceiling')"><a class="button button-xs button-gray-2" href="#">details</a></div>
                   </article>
                 </div>
                 <div class="col-6 col-md-4 col-lg-3 isotope-item" data-filter="Category 1">
-                  <!-- Product-->
-                  <article class="product"> <a class="product__image-wrap" href="#"><img class="product__image" src="images/product-19-210x200.jpg" alt="" width="210" height="200"/></a>
+                  <!--product-->
+                  <article class="product">
+                    <div class="product__image-container" onclick="openModal('corian-surface')">
+                      <img class="product__image" src="images/product-19-210x200.jpg" alt="" width="210" height="200"/>
+                      <div class="product__overlay">
+                        <div class="view-button">
+                          <span class="view-text">View</span>
+                        </div>
+                      </div>
+                    </div>
                     <div class="product__main">
                       <p class="product__title"><a href="#">Corian Surface</a></p>
                       <p class="product__price"></p>
                     </div>
-                    <div class="product__footer" onclick="openModal('corian-surface')"><a class="button button-xs button-gray-2" href="#">details</a></div>
                   </article>
                 </div>
                 <div class="col-6 col-md-4 col-lg-3 isotope-item" data-filter="Category 1">
-                  <!-- Product-->
-                  <article class="product"> <a class="product__image-wrap" href="#"><img class="product__image" src="images/product-20-210x200.jpg" alt="" width="210" height="200"/></a>
+                  <!--product-->
+                  <article class="product">
+                    <div class="product__image-container" onclick="openModal('exterior-products')">
+                      <img class="product__image" src="images/product-20-210x200.jpg" alt="" width="210" height="200"/>
+                      <div class="product__overlay">
+                        <div class="view-button">
+                          <span class="view-text">View</span>
+                        </div>
+                      </div>
+                    </div>
                     <div class="product__main">
                       <p class="product__title"><a href="#">Exterior Products</a></p>
                       <p class="product__price"></p>
                     </div>
-                    <div class="product__footer" onclick="openModal('exterior-products')"><a class="button button-xs button-gray-2" href="#">details</a></div>
                   </article>
                 </div>
                 <div class="col-6 col-md-4 col-lg-3 isotope-item" data-filter="Category 1">
-                  <!-- Product-->
-                  <article class="product"> <a class="product__image-wrap" href="#"><img class="product__image" src="images/product-21-210x200.png" alt="" width="210" height="200"/></a>
+                  <!--product-->
+                  <article class="product">
+                    <div class="product__image-container" onclick="openModal('laminated-particleboards')">
+                      <img class="product__image" src="images/product-21-210x200.png" alt="" width="210" height="200"/>
+                      <div class="product__overlay">
+                        <div class="view-button">
+                          <span class="view-text">View</span>
+                        </div>
+                      </div>
+                    </div>
                     <div class="product__main">
                       <p class="product__title"><a href="#">Laminated Particleboards</a></p>
                       <p class="product__price"></p>
                     </div>
-                    <div class="product__footer" onclick="openModal('laminated-particleboards')"><a class="button button-xs button-gray-2" href="#">details</a></div>
                   </article>
                 </div>
                 <div class="col-6 col-md-4 col-lg-3 isotope-item" data-filter="Category 1">
-                  <!-- Product-->
-                  <article class="product"> <a class="product__image-wrap" href="#"><img class="product__image" src="images/product-22-210x200.jpg" alt="" width="210" height="200"/></a>
+                  <!--product-->
+                  <article class="product">
+                    <div class="product__image-container" onclick="openModal('hpl')">
+                      <img class="product__image" src="images/product-22-210x200.jpg" alt="" width="210" height="200"/>
+                      <div class="product__overlay">
+                        <div class="view-button">
+                          <span class="view-text">View</span>
+                        </div>
+                      </div>
+                    </div>
                     <div class="product__main">
                       <p class="product__title"><a href="#">HPL</a></p>
                       <p class="product__price"></p>
                     </div>
-                    <div class="product__footer" onclick="openModal('hpl')"><a class="button button-xs button-gray-2" href="#">details</a></div>
                   </article>
                 </div>
                 <div class="col-6 col-md-4 col-lg-3 isotope-item" data-filter="Category 1">
-                  <!-- Product-->
-                  <article class="product"> <a class="product__image-wrap" href="#"><img class="product__image" src="images/product-23-210x200.jpeg" alt="" width="210" height="200"/></a>
+                  <!--product-->
+                  <article class="product">
+                    <div class="product__image-container" onclick="openModal('metal-sheets')">
+                      <img class="product__image" src="images/product-23-210x200.jpeg" alt="" width="210" height="200"/>
+                      <div class="product__overlay">
+                        <div class="view-button">
+                          <span class="view-text">View</span>
+                        </div>
+                      </div>
+                    </div>
                     <div class="product__main">
                       <p class="product__title"><a href="#">Metal Sheets and Profiles</a></p>
                       <p class="product__price"></p>
                     </div>
-                    <div class="product__footer" onclick="openModal('metal-sheets')"><a class="button button-xs button-gray-2" href="#">details</a></div>
                   </article>
                 </div>
                 <div class="col-6 col-md-4 col-lg-3 isotope-item" data-filter="Category 1">
-                  <!-- Product-->
-                  <article class="product"> <a class="product__image-wrap" href="#"><img class="product__image" src="images/product-24-210x200.jpg" alt="" width="210" height="200"/></a>
+                  <!--product-->
+                  <article class="product">
+                    <div class="product__image-container" onclick="openModal('pu-sheets')">
+                      <img class="product__image" src="images/product-24-210x200.jpg" alt="" width="210" height="200"/>
+                      <div class="product__overlay">
+                        <div class="view-button">
+                          <span class="view-text">View</span>
+                        </div>
+                      </div>
+                    </div>
                     <div class="product__main">
                       <p class="product__title"><a href="#">PU Sheets</a></p>
                       <p class="product__price"></p>
                     </div>
-                    <div class="product__footer" onclick="openModal('pu-sheets')"><a class="button button-xs button-gray-2" href="#">details</a></div>
                   </article>
                 </div>
                 <div class="col-6 col-md-4 col-lg-3 isotope-item" data-filter="Category 1">
-                  <!-- Product-->
-                  <article class="product"> <a class="product__image-wrap" href="#"><img class="product__image" src="images/product-25-210x200.jpg" alt="" width="210" height="200"/></a>
+                  <!--product-->
+                  <article class="product">
+                    <div class="product__image-container" onclick="openModal('veneers')">
+                      <img class="product__image" src="images/product-25-210x200.jpg" alt="" width="210" height="200"/>
+                      <div class="product__overlay">
+                        <div class="view-button">
+                          <span class="view-text">View</span>
+                        </div>
+                      </div>
+                    </div>
                     <div class="product__main">
                       <p class="product__title"><a href="#">Veneers</a></p>
                       <p class="product__price"></p>
                     </div>
-                    <div class="product__footer" onclick="openModal('veneers')"><a class="button button-xs button-gray-2" href="#">details</a></div>
                   </article>
                 </div>
                 <div class="col-6 col-md-4 col-lg-3 isotope-item" data-filter="Category 1">
-                  <!-- Product-->
-                  <article class="product"> <a class="product__image-wrap" href="#"><img class="product__image" src="images/product-26-210x200.jpg" alt="" width="210" height="200"/></a>
+                  <!--product-->
+                  <article class="product">
+                    <div class="product__image-container" onclick="openModal('wall-highlighters')">
+                      <img class="product__image" src="images/product-26-210x200.jpg" alt="" width="210" height="200"/>
+                      <div class="product__overlay">
+                        <div class="view-button">
+                          <span class="view-text">View</span>
+                        </div>
+                      </div>
+                    </div>
                     <div class="product__main">
                       <p class="product__title"><a href="#">Wall Highlighters</a></p>
                       <p class="product__price"></p>
                     </div>
-                    <div class="product__footer" onclick="openModal('wall-highlighters')"><a class="button button-xs button-gray-2" href="#">details</a></div>
                   </article>
                 </div>
                 <div class="col-6 col-md-4 col-lg-3 isotope-item" data-filter="Category 1">
-                  <!-- Product-->
-                  <article class="product"> <a class="product__image-wrap" href="#"><img class="product__image" src="images/product-27-210x200.jpg" alt="" width="210" height="200"/></a>
+                  <!--product-->
+                  <article class="product">
+                    <div class="product__image-container" onclick="openModal('door-skins')">
+                      <img class="product__image" src="images/product-27-210x200.jpg" alt="" width="210" height="200"/>
+                      <div class="product__overlay">
+                        <div class="view-button">
+                          <span class="view-text">View</span>
+                        </div>
+                      </div>
+                    </div>
                     <div class="product__main">
                       <p class="product__title"><a href="#">Door Skins</a></p>
                       <p class="product__price"></p>
                     </div>
-                    <div class="product__footer" onclick="openModal('door-skins')"><a class="button button-xs button-gray-2" href="#">details</a></div>
                   </article>
                 </div>
                 <div class="col-6 col-md-4 col-lg-3 isotope-item" data-filter="Category 1">
-                  <!-- Product-->
-                  <article class="product"> <a class="product__image-wrap" href="#"><img class="product__image" src="images/product-01-210x200.jpg" alt="" width="210" height="200"/></a>
+                  <!--product-->
+                  <article class="product">
+                    <div class="product__image-container" onclick="openModal('others')">
+                      <img class="product__image" src="images/product-01-210x200.jpg" alt="" width="210" height="200"/>
+                      <div class="product__overlay">
+                        <div class="view-button">
+                          <span class="view-text">View</span>
+                        </div>
+                      </div>
+                    </div>
                     <div class="product__main">
                       <p class="product__title"><a href="#">Others</a></p>
                       <p class="product__price"></p>
                     </div>
-                    <div class="product__footer" onclick="openModal('others')"><a class="button button-xs button-gray-2" href="#">details</a></div>
                   </article>
                 </div>
               </div>
@@ -566,7 +756,34 @@
           <label for="interest">Item of Interest</label>
           <select id="interest-modal" name="interest" required>
               <option value="">Select an item</option>
-              <!-- Add your options here -->
+              <option value="Laminates">Laminates</option>
+                <option value="Fabric sheets">Fabric Sheets</option>
+                <option value="Wall Mouldings">Wall Mouldings</option>
+                <option value="Wallpapers">Wallpapers</option>
+                <option value="Acoustic Panels">Acoustic Panels</option>
+                <option value="Stone Veneers">Stone Veneers</option>
+                <option value="Wooden Flooring">Wooden Flooring</option>
+                <option value="Plywood">Plywood</option>
+                <option value="Mosaics">Mosaics</option>
+                <option value="Louvres">Louvres</option>
+                <option value="Evergreen Panels">Evergreen Panels</option>
+                <option value="Charcoal Highlighters">Charcoal Highlighters</option>
+                <option value="Acrylic Sheets">Acrylic Sheets</option>
+                <option value="ASA Sheets">ASA Sheets</option>
+                <option value="Backlit and Alabasters">backlit and Alabasters</option>
+                <option value="Blinds">Blinds</option>
+                <option value="Cane Webbings">Cane Webbings</option>
+                <option value="Ceiling">Ceiling</option>
+                <option value="Corian Surface">Corian Surface</option>
+                <option value="Exterior Products">Exterior Products</option>
+                <option value="Laminated Particleboards">Laminated Particleboards</option>
+                <option value="HPL">HPL</option>
+                <option value="Metal Sheets and Profiles">Metal Sheets And Profiles</option>
+                <option value="PU Sheets">PU Sheets</option>
+                <option value="Veneers">Veneers</option>
+                <option value="Wall Highlights">Wall Highlighters</option>
+                <option value="Door Skins">Door Skins</option>
+                <option value="Others">Others</option>
           </select>
 
           <button type="button" onclick="SubForm()">Submit</button>
@@ -935,7 +1152,7 @@ function extractFileId(pdfUrl) {
 
 // Function to generate thumbnail URL from Google Drive file ID
 function generateThumbnailUrl(fileId) {
-  if (!fileId) return '/api/placeholder/200/150'; // Fallback to placeholder
+  if (!fileId) return '../images/logo-default-380x100.png'; // Fallback to placeholder
   return `https://drive.google.com/thumbnail?id=${fileId}`;
 }
 
@@ -964,16 +1181,17 @@ function openModal(category) {
     // Create and setup thumbnail image
     const thumbnail = document.createElement('img');
     thumbnail.className = 'thumbnail-image';
-    
-    // Add loading state and error handling
     thumbnail.src = thumbnailUrl;
     thumbnail.alt = type.name;
-    thumbnail.loading = 'lazy'; // Enable lazy loading
+    thumbnail.loading = 'lazy';
+    
+    // Make thumbnail clickable to view PDF
+    thumbnailContainer.style.cursor = 'pointer';
+    thumbnailContainer.onclick = () => openPDF(type.pdf);
 
-    // Add error handling to fall back to placeholder
     thumbnail.onerror = function() {
-      this.src = '/api/placeholder/200/150';
-      this.onerror = null; // Prevent infinite loop
+      this.src = '../images/logo-default-380x100.png';
+      this.onerror = null;
     };
 
     // Create product name element
@@ -981,20 +1199,20 @@ function openModal(category) {
     productName.className = 'product-name';
     productName.textContent = type.name;
 
-    // Create view PDF button
-    const viewButton = document.createElement('button');
-    viewButton.className = 'view-pdf-btn';
-    viewButton.textContent = 'View PDF';
-    viewButton.onclick = (e) => {
-      e.stopPropagation(); // Prevent grid item click
-      openPDF(type.pdf);
+    // Create download PDF button
+    const downloadButton = document.createElement('button');
+    downloadButton.className = 'download-pdf-btn';
+    downloadButton.textContent = 'Download PDF';
+    downloadButton.onclick = (e) => {
+      e.stopPropagation();
+      downloadPDF(type.pdf, type.name);
     };
 
     // Assemble the grid item
     thumbnailContainer.appendChild(thumbnail);
     gridItem.appendChild(thumbnailContainer);
     gridItem.appendChild(productName);
-    gridItem.appendChild(viewButton);
+    gridItem.appendChild(downloadButton);
 
     // Add to the grid
     list.appendChild(gridItem);
@@ -1003,64 +1221,86 @@ function openModal(category) {
   modal.style.display = 'flex';
 }
 
-// Updated CSS for better thumbnail handling
+// Download PDF function
+function downloadPDF(pdfUrl, fileName) {
+  const link = document.createElement('a');
+  link.href = pdfUrl;
+  link.download = `${fileName}.pdf`; // Set the download filename
+  
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+}
+
+// Add the updated CSS
 const style = document.createElement('style');
 style.textContent = `
-  .grid-layout {
+  /* Grid Layout */
+  #type-list {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 20px;
-    padding: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 1rem;
+    padding: 1rem;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
   }
 
+  /* Grid Item */
   .grid-item {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 10px;
+    padding: 0.75rem;
     border: 1px solid #ddd;
     border-radius: 8px;
     background: white;
     transition: transform 0.2s, box-shadow 0.2s;
+    height: 100%;
   }
 
   .grid-item:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transform: translateY(-3px);
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
   }
 
+  /* Thumbnail Container */
   .thumbnail-container {
     width: 100%;
-    height: 150px;
+    aspect-ratio: 4/3;
     overflow: hidden;
     border-radius: 4px;
     background: #f5f5f5;
     position: relative;
+    transition: opacity 0.2s;
   }
 
+  .thumbnail-container:hover {
+    opacity: 0.9;
+  }
+
+  /* Thumbnail Image */
   .thumbnail-image {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    transition: opacity 0.3s;
   }
 
-  .thumbnail-image[src="/api/placeholder/200/150"] {
-    opacity: 0.7;
-  }
-
+  /* Product Name */
   .product-name {
-    margin: 10px 0;
+    margin: 0.75rem 0;
     text-align: center;
     font-weight: 500;
+    font-size: clamp(0.875rem, 2vw, 1rem);
     max-width: 100%;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
   }
 
-  .view-pdf-btn {
-    padding: 8px 16px;
+  /* Download Button */
+  .download-pdf-btn {
+    padding: 0.5rem 1rem;
     background-color: #007bff;
     color: white;
     border: none;
@@ -1068,10 +1308,43 @@ style.textContent = `
     cursor: pointer;
     transition: background-color 0.2s;
     margin-top: auto;
+    font-size: clamp(0.75rem, 1.5vw, 0.875rem);
+    width: 100%;
+    max-width: 150px;
   }
 
-  .view-pdf-btn:hover {
+  .download-pdf-btn:hover {
     background-color: #0056b3;
+  }
+
+  /* Modal Responsive Styles */
+  #productModal {
+    padding: 1rem;
+  }
+
+  /* Media Queries */
+  @media (max-width: 768px) {
+    #type-list {
+      grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+      gap: 0.75rem;
+      padding: 0.75rem;
+    }
+
+    .grid-item {
+      padding: 0.5rem;
+    }
+
+    .download-pdf-btn {
+      padding: 0.4rem 0.8rem;
+    }
+  }
+
+  @media (max-width: 480px) {
+    #type-list {
+      grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+      gap: 0.5rem;
+      padding: 0.5rem;
+    }
   }
 `;
 document.head.appendChild(style);
@@ -1095,13 +1368,15 @@ window.onclick = function (event) {
   }
 };
 
+
   
 
   </script>
   <script>
     src="https://code.jquery.com/jquery-3.4.1.js"
   integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
-  crossorigin="anonymous"></script>
+  crossorigin="anonymous">
+  </script>
 <script>
   function SubForm (){
     $.ajax({
@@ -1178,6 +1453,7 @@ window.onclick = function(event) {
 }
 
   </script>
+     
   
   
   </body>
